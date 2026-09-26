@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://d0g3nojfr6ijp"]
+
+[ext_resource type="Theme" uid="uid://boroh73kjkh88" path="res://theme/cookie_theme.tres" id="1_sl1te"]
+[ext_resource type="Script" uid="uid://d06hn28muap5p" path="res://scenes/ui/main_menu.gd" id="2_fe2o3"]
+
+[node name="MainMenu" type="Control" unique_id=483748065 node_paths=PackedStringArray("game_start_button", "credits_button", "quit_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_sl1te")
+script = ExtResource("2_fe2o3")
+game_start_button = NodePath("CenterContainer/VBoxContainer/StartGameButton")
+credits_button = NodePath("CenterContainer/VBoxContainer/CreditsButton")
+quit_button = NodePath("CenterContainer/VBoxContainer/QuitButton")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=799389815]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=818781784]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="StartGameButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1743408222]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Start Game"
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1486889533]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=962695612]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Quit Game"
