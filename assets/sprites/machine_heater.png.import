@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://dsgt01esusy5f"
+path="res://.godot/imported/machine_heater.png-b84f22b40e2c80728e2e100506c26ef5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/machine_heater.png"
+dest_files=["res://.godot/imported/machine_heater.png-b84f22b40e2c80728e2e100506c26ef5.ctex"]
 
 [params]
 

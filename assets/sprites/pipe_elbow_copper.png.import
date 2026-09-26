@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://cvy7yqa0kxxky"
+path="res://.godot/imported/pipe_elbow_copper.png-d37748e1644b17dd8db68217cdac2e04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/pipe_elbow_copper.png"
+dest_files=["res://.godot/imported/pipe_elbow_copper.png-d37748e1644b17dd8db68217cdac2e04.ctex"]
 
 [params]
 

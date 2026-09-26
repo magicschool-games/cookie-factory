@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://bafgr52wsipxa"
+path="res://.godot/imported/floor_icing.png-33c000c73eb652468e5da677bd1cd9e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/floor_icing.png"
+dest_files=["res://.godot/imported/floor_icing.png-33c000c73eb652468e5da677bd1cd9e2.ctex"]
 
 [params]
 

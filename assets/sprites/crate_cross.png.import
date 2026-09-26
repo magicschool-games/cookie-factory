@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://dfs2le712wgtj"
+path="res://.godot/imported/crate_cross.png-b1f57740e56be36e00214f1e562198de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/crate_cross.png"
+dest_files=["res://.godot/imported/crate_cross.png-b1f57740e56be36e00214f1e562198de.ctex"]
 
 [params]
 

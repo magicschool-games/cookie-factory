@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://djk50kpi6pnfk"
+path="res://.godot/imported/floor_metal.png-5aa78155b1bd09eedc790b217e6a7475.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/floor_metal.png"
+dest_files=["res://.godot/imported/floor_metal.png-5aa78155b1bd09eedc790b217e6a7475.ctex"]
 
 [params]
 

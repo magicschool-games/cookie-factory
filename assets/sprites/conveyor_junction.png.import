@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://cod1dasyhmeoy"
+path="res://.godot/imported/conveyor_junction.png-f3f93905bc4bbdcce70a0085cca879f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/conveyor_junction.png"
+dest_files=["res://.godot/imported/conveyor_junction.png-f3f93905bc4bbdcce70a0085cca879f6.ctex"]
 
 [params]
 

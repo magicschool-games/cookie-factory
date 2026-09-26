@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://bbvmyud8k8snu"
+path="res://.godot/imported/pipe_cap.png-d58c15460c5e054376ce6f825381e30e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/pipe_cap.png"
+dest_files=["res://.godot/imported/pipe_cap.png-d58c15460c5e054376ce6f825381e30e.ctex"]
 
 [params]
 

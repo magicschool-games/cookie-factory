@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://dmvdy3j8bta5u"
+path="res://.godot/imported/wall_long_corner_left.png-849a5ccdf0ea04a1c7c32e335c3e13cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/wall_long_corner_left.png"
+dest_files=["res://.godot/imported/wall_long_corner_left.png-849a5ccdf0ea04a1c7c32e335c3e13cc.ctex"]
 
 [params]
 

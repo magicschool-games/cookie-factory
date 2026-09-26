@@ -17,6 +17,11 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1440
+window/size/viewport_height=1080
+window/size/window_width_override=1152
+window/size/window_height_override=864
+
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

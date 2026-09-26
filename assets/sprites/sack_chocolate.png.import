@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://y6igj3ish6h2"
+path="res://.godot/imported/sack_chocolate.png-7e9ffcd726cd72ebf21412ed033a4f88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/sack_chocolate.png"
+dest_files=["res://.godot/imported/sack_chocolate.png-7e9ffcd726cd72ebf21412ed033a4f88.ctex"]
 
 [params]
 

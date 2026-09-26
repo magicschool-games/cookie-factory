@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://cpb0f2hod3mw6"
+path="res://.godot/imported/conveyor_gate.png-6ef1501e28b074b3b46629c66a27f8f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/conveyor_gate.png"
+dest_files=["res://.godot/imported/conveyor_gate.png-6ef1501e28b074b3b46629c66a27f8f2.ctex"]
 
 [params]
 

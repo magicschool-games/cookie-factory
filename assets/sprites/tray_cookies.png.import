@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://cyhsojuc6dlbo"
+path="res://.godot/imported/tray_cookies.png-3c39811620f08870bbd14ff32ddd2cb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/sprites/tray_cookies.png"
+dest_files=["res://.godot/imported/tray_cookies.png-3c39811620f08870bbd14ff32ddd2cb3.ctex"]
 
 [params]
 
