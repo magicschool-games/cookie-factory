@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dmwl06a4erift"]
+
+[ext_resource type="Script" uid="uid://blmyp7klfshoo" path="res://scenes/dialog/dialog_bubble.gd" id="1_8jp1d"]
+[ext_resource type="Theme" uid="uid://boroh73kjkh88" path="res://theme/cookie_theme.tres" id="1_s2350"]
+
+[node name="DialogBubble" type="Node2D" unique_id=1102743346 node_paths=PackedStringArray("dialog_container", "message_label")]
+script = ExtResource("1_8jp1d")
+dialog_container = NodePath("DialogContainer")
+message_label = NodePath("DialogContainer/MarginContainer/Label")
+
+[node name="DialogContainer" type="PanelContainer" parent="." unique_id=1786742018]
+offset_right = 517.0
+offset_bottom = 44.0
+theme = ExtResource("1_s2350")
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogContainer" unique_id=1301258428]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="DialogContainer/MarginContainer" unique_id=1913874998]
+layout_mode = 2
+text = "Lorem ipsum dolor sit amed et consecuteur"
+
+[node name="ThinkingBubbles" type="Control" parent="." unique_id=41861182]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_s2350")
+
+[node name="ThinkingBubble2" type="PanelContainer" parent="ThinkingBubbles" unique_id=2063875907]
+custom_maximum_size = Vector2(48, 48)
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ThinkingBubble1" type="PanelContainer" parent="ThinkingBubbles" unique_id=1047428425]
+custom_maximum_size = Vector2(24, 24)
+layout_mode = 1
+offset_right = 24.0
+offset_bottom = 24.0

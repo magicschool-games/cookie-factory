@@ -34,6 +34,18 @@ texture_margin_right = 7.0
 texture_margin_bottom = 7.0
 region_rect = Rect2(290, 94, 45, 45)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_conm7"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
 [resource]
 Button/colors/font_color = Color(0.33333334, 0.14901961, 0.047058824, 1)
 Button/colors/font_disabled_color = Color(0.33333334, 0.14901961, 0.047058824, 0.5019608)
@@ -44,3 +56,6 @@ Button/styles/disabled = SubResource("StyleBoxTexture_nbb2b")
 Button/styles/hover = SubResource("StyleBoxTexture_bevkv")
 Button/styles/normal = SubResource("StyleBoxTexture_eq5vp")
 Button/styles/pressed = SubResource("StyleBoxTexture_x3g8c")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 24
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_conm7")
