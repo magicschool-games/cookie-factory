@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://ndud51in5yh4"]
+
+[ext_resource type="Texture2D" uid="uid://drghq3gqv510c" path="res://theme/input/keyboard_arrows.png" id="1_gcy0x"]
+[ext_resource type="Script" uid="uid://cgb3j24uyqhh3" path="res://scenes/ui/input_hints.gd" id="1_ytjh7"]
+[ext_resource type="Texture2D" uid="uid://bj16ely7cjcpc" path="res://theme/input/keyboard_e.png" id="2_ldvnw"]
+[ext_resource type="Script" uid="uid://dwjroi20fla02" path="res://scenes/ui/toggle_texture.gd" id="3_fmcoa"]
+[ext_resource type="Texture2D" uid="uid://lfq57gyq3ex7" path="res://theme/input/keyboard_e_outline.png" id="4_ldvnw"]
+[ext_resource type="Texture2D" uid="uid://dnoiwoy4lfic8" path="res://theme/input/keyboard_escape.png" id="5_giomx"]
+[ext_resource type="Texture2D" uid="uid://j8f3grq4vods" path="res://theme/input/keyboard_escape_outline.png" id="6_ytjh7"]
+
+[node name="InputHints" type="Control" unique_id=1006091290 node_paths=PackedStringArray("move_hint", "interact_hint", "quit_hint")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ytjh7")
+move_hint = NodePath("MarginContainer/HBoxContainer/MoveHintContainer")
+interact_hint = NodePath("MarginContainer/HBoxContainer/InteractHintContainer")
+quit_hint = NodePath("MarginContainer/HBoxContainer/QuitHintContainer")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=341787342]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=835483996]
+layout_mode = 2
+
+[node name="MoveHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1616289592]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer" unique_id=1206957697]
+layout_mode = 2
+texture = ExtResource("1_gcy0x")
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/MoveHintContainer" unique_id=1800529840]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Move"
+
+[node name="InteractHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1788058915]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/InteractHintContainer" unique_id=1032779540]
+layout_mode = 2
+texture = ExtResource("2_ldvnw")
+script = ExtResource("3_fmcoa")
+texture_1 = ExtResource("2_ldvnw")
+texture_2 = ExtResource("4_ldvnw")
+toogle_time_s = 0.7
+disable_toggle = true
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/InteractHintContainer" unique_id=1911254998]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Interact"
+
+[node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1689139795]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QuitHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1061335278]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/QuitHintContainer" unique_id=29043357]
+layout_mode = 2
+texture = ExtResource("5_giomx")
+script = ExtResource("3_fmcoa")
+texture_1 = ExtResource("5_giomx")
+texture_2 = ExtResource("6_ytjh7")
+toogle_time_s = 0.7
+disable_toggle = true
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/QuitHintContainer" unique_id=718530046]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Quit"
