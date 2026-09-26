@@ -1,0 +1,1790 @@
+{
+	"sprites/bowl_butter_small": {
+		"atlas_coords": [
+			0,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_butter_small.png",
+		"source_id": 0
+	},
+	"sprites/bowl_chocolate": {
+		"atlas_coords": [
+			1,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_chocolate.png",
+		"source_id": 0
+	},
+	"sprites/bowl_chocolate_small": {
+		"atlas_coords": [
+			2,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_chocolate_small.png",
+		"source_id": 0
+	},
+	"sprites/bowl_cocoa": {
+		"atlas_coords": [
+			3,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_cocoa.png",
+		"source_id": 0
+	},
+	"sprites/bowl_dough": {
+		"atlas_coords": [
+			4,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_dough.png",
+		"source_id": 0
+	},
+	"sprites/bowl_flour": {
+		"atlas_coords": [
+			5,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_flour.png",
+		"source_id": 0
+	},
+	"sprites/bowl_sugar_small": {
+		"atlas_coords": [
+			6,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/bowl_sugar_small.png",
+		"source_id": 0
+	},
+	"sprites/box_cookies": {
+		"atlas_coords": [
+			7,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/box_cookies.png",
+		"source_id": 0
+	},
+	"sprites/butter_blocks": {
+		"atlas_coords": [
+			8,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/butter_blocks.png",
+		"source_id": 0
+	},
+	"sprites/butter_stack": {
+		"atlas_coords": [
+			9,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/butter_stack.png",
+		"source_id": 0
+	},
+	"sprites/control_panel": {
+		"atlas_coords": [
+			10,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/control_panel.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_corner_left": {
+		"atlas_coords": [
+			11,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_corner_left.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_corner_right": {
+		"atlas_coords": [
+			12,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_corner_right.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_cross": {
+		"atlas_coords": [
+			13,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_cross.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_end": {
+		"atlas_coords": [
+			14,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_end.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_gate": {
+		"atlas_coords": [
+			15,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_gate.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_horizontal": {
+		"atlas_coords": [
+			0,
+			1
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_horizontal.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_junction": {
+		"atlas_coords": [
+			2,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_junction.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_short": {
+		"atlas_coords": [
+			3,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_short.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_switch": {
+		"atlas_coords": [
+			4,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_switch.png",
+		"source_id": 0
+	},
+	"sprites/conveyor_vertical": {
+		"atlas_coords": [
+			5,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/conveyor_vertical.png",
+		"source_id": 0
+	},
+	"sprites/cookie_bar": {
+		"atlas_coords": [
+			6,
+			1
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/cookie_bar.png",
+		"source_id": 0
+	},
+	"sprites/cookie_bar_end": {
+		"atlas_coords": [
+			8,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/cookie_bar_end.png",
+		"source_id": 0
+	},
+	"sprites/cookie_bar_short": {
+		"atlas_coords": [
+			9,
+			1
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/cookie_bar_short.png",
+		"source_id": 0
+	},
+	"sprites/cookies": {
+		"atlas_coords": [
+			11,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/cookies.png",
+		"source_id": 0
+	},
+	"sprites/crate_closed": {
+		"atlas_coords": [
+			12,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/crate_closed.png",
+		"source_id": 0
+	},
+	"sprites/crate_cookies": {
+		"atlas_coords": [
+			13,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/crate_cookies.png",
+		"source_id": 0
+	},
+	"sprites/crate_cross": {
+		"atlas_coords": [
+			14,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/crate_cross.png",
+		"source_id": 0
+	},
+	"sprites/crate_empty": {
+		"atlas_coords": [
+			15,
+			1
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/crate_empty.png",
+		"source_id": 0
+	},
+	"sprites/floor_cookie": {
+		"atlas_coords": [
+			0,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/floor_cookie.png",
+		"source_id": 0
+	},
+	"sprites/floor_cookie_panels": {
+		"atlas_coords": [
+			1,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/floor_cookie_panels.png",
+		"source_id": 0
+	},
+	"sprites/floor_icing": {
+		"atlas_coords": [
+			2,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/floor_icing.png",
+		"source_id": 0
+	},
+	"sprites/floor_icing_seamless": {
+		"atlas_coords": [
+			3,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/floor_icing_seamless.png",
+		"source_id": 0
+	},
+	"sprites/floor_metal": {
+		"atlas_coords": [
+			4,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/floor_metal.png",
+		"source_id": 0
+	},
+	"sprites/jug_milk": {
+		"atlas_coords": [
+			5,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/jug_milk.png",
+		"source_id": 0
+	},
+	"sprites/machine_cooler": {
+		"atlas_coords": [
+			6,
+			2
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_cooler.png",
+		"source_id": 0
+	},
+	"sprites/machine_depositor": {
+		"atlas_coords": [
+			8,
+			2
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_depositor.png",
+		"source_id": 0
+	},
+	"sprites/machine_extruder": {
+		"atlas_coords": [
+			10,
+			2
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_extruder.png",
+		"source_id": 0
+	},
+	"sprites/machine_heater": {
+		"atlas_coords": [
+			12,
+			2
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_heater.png",
+		"source_id": 0
+	},
+	"sprites/machine_mixer": {
+		"atlas_coords": [
+			14,
+			2
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_mixer.png",
+		"source_id": 0
+	},
+	"sprites/machine_oven": {
+		"atlas_coords": [
+			0,
+			4
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_oven.png",
+		"source_id": 0
+	},
+	"sprites/machine_tank": {
+		"atlas_coords": [
+			2,
+			4
+		],
+		"cells": [
+			2,
+			2
+		],
+		"source": "res://assets/sprites/machine_tank.png",
+		"source_id": 0
+	},
+	"sprites/pipe_cap": {
+		"atlas_coords": [
+			4,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_cap.png",
+		"source_id": 0
+	},
+	"sprites/pipe_copper": {
+		"atlas_coords": [
+			6,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_copper.png",
+		"source_id": 0
+	},
+	"sprites/pipe_elbow_copper": {
+		"atlas_coords": [
+			8,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/pipe_elbow_copper.png",
+		"source_id": 0
+	},
+	"sprites/pipe_elbow_steel": {
+		"atlas_coords": [
+			9,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_elbow_steel.png",
+		"source_id": 0
+	},
+	"sprites/pipe_steel": {
+		"atlas_coords": [
+			11,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_steel.png",
+		"source_id": 0
+	},
+	"sprites/pipe_steel_short": {
+		"atlas_coords": [
+			13,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_steel_short.png",
+		"source_id": 0
+	},
+	"sprites/pipe_valve_gauge": {
+		"atlas_coords": [
+			0,
+			6
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/pipe_valve_gauge.png",
+		"source_id": 0
+	},
+	"sprites/rack_cookies": {
+		"atlas_coords": [
+			2,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/rack_cookies.png",
+		"source_id": 0
+	},
+	"sprites/sack_chocolate": {
+		"atlas_coords": [
+			3,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/sack_chocolate.png",
+		"source_id": 0
+	},
+	"sprites/sack_flour": {
+		"atlas_coords": [
+			4,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/sack_flour.png",
+		"source_id": 0
+	},
+	"sprites/sack_flour_open": {
+		"atlas_coords": [
+			5,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/sack_flour_open.png",
+		"source_id": 0
+	},
+	"sprites/scoop_large": {
+		"atlas_coords": [
+			6,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/scoop_large.png",
+		"source_id": 0
+	},
+	"sprites/scoop_small": {
+		"atlas_coords": [
+			7,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/scoop_small.png",
+		"source_id": 0
+	},
+	"sprites/tray_cookies": {
+		"atlas_coords": [
+			8,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/tray_cookies.png",
+		"source_id": 0
+	},
+	"sprites/tray_dough": {
+		"atlas_coords": [
+			9,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/tray_dough.png",
+		"source_id": 0
+	},
+	"sprites/tray_empty": {
+		"atlas_coords": [
+			10,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/tray_empty.png",
+		"source_id": 0
+	},
+	"sprites/wall_corner_left": {
+		"atlas_coords": [
+			11,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_corner_left.png",
+		"source_id": 0
+	},
+	"sprites/wall_corner_right": {
+		"atlas_coords": [
+			12,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_corner_right.png",
+		"source_id": 0
+	},
+	"sprites/wall_corner_small": {
+		"atlas_coords": [
+			13,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_corner_small.png",
+		"source_id": 0
+	},
+	"sprites/wall_door": {
+		"atlas_coords": [
+			14,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_door.png",
+		"source_id": 0
+	},
+	"sprites/wall_door_narrow": {
+		"atlas_coords": [
+			15,
+			6
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_door_narrow.png",
+		"source_id": 0
+	},
+	"sprites/wall_door_wide": {
+		"atlas_coords": [
+			0,
+			7
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/wall_door_wide.png",
+		"source_id": 0
+	},
+	"sprites/wall_end": {
+		"atlas_coords": [
+			2,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_end.png",
+		"source_id": 0
+	},
+	"sprites/wall_long": {
+		"atlas_coords": [
+			3,
+			7
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/wall_long.png",
+		"source_id": 0
+	},
+	"sprites/wall_long_corner_left": {
+		"atlas_coords": [
+			5,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_long_corner_left.png",
+		"source_id": 0
+	},
+	"sprites/wall_long_corner_right": {
+		"atlas_coords": [
+			6,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_long_corner_right.png",
+		"source_id": 0
+	},
+	"sprites/wall_low": {
+		"atlas_coords": [
+			7,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_low.png",
+		"source_id": 0
+	},
+	"sprites/wall_low_long": {
+		"atlas_coords": [
+			8,
+			7
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/wall_low_long.png",
+		"source_id": 0
+	},
+	"sprites/wall_pillar": {
+		"atlas_coords": [
+			10,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites/wall_pillar.png",
+		"source_id": 0
+	},
+	"sprites/wall_straight": {
+		"atlas_coords": [
+			11,
+			7
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites/wall_straight.png",
+		"source_id": 0
+	},
+	"sprites_extended/barrier": {
+		"atlas_coords": [
+			0,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/barrier.png",
+		"source_id": 1
+	},
+	"sprites_extended/belt_broken": {
+		"atlas_coords": [
+			1,
+			0
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/belt_broken.png",
+		"source_id": 1
+	},
+	"sprites_extended/belt_short": {
+		"atlas_coords": [
+			3,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/belt_short.png",
+		"source_id": 1
+	},
+	"sprites_extended/bollard_medium": {
+		"atlas_coords": [
+			4,
+			0
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/bollard_medium.png",
+		"source_id": 1
+	},
+	"sprites_extended/bollard_short": {
+		"atlas_coords": [
+			5,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/bollard_short.png",
+		"source_id": 1
+	},
+	"sprites_extended/bollard_steel": {
+		"atlas_coords": [
+			6,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/bollard_steel.png",
+		"source_id": 1
+	},
+	"sprites_extended/bollard_tall": {
+		"atlas_coords": [
+			7,
+			0
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/bollard_tall.png",
+		"source_id": 1
+	},
+	"sprites_extended/butter_spill": {
+		"atlas_coords": [
+			8,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/butter_spill.png",
+		"source_id": 1
+	},
+	"sprites_extended/chocolate_drip": {
+		"atlas_coords": [
+			9,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/chocolate_drip.png",
+		"source_id": 1
+	},
+	"sprites_extended/chocolate_drops": {
+		"atlas_coords": [
+			10,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/chocolate_drops.png",
+		"source_id": 1
+	},
+	"sprites_extended/chocolate_puddle": {
+		"atlas_coords": [
+			11,
+			0
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/chocolate_puddle.png",
+		"source_id": 1
+	},
+	"sprites_extended/crate": {
+		"atlas_coords": [
+			13,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/crate.png",
+		"source_id": 1
+	},
+	"sprites_extended/crate_broken": {
+		"atlas_coords": [
+			14,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/crate_broken.png",
+		"source_id": 1
+	},
+	"sprites_extended/crate_cracked": {
+		"atlas_coords": [
+			15,
+			0
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/crate_cracked.png",
+		"source_id": 1
+	},
+	"sprites_extended/door": {
+		"atlas_coords": [
+			0,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/door.png",
+		"source_id": 1
+	},
+	"sprites_extended/door_reinforced": {
+		"atlas_coords": [
+			1,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/door_reinforced.png",
+		"source_id": 1
+	},
+	"sprites_extended/door_steel": {
+		"atlas_coords": [
+			2,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/door_steel.png",
+		"source_id": 1
+	},
+	"sprites_extended/door_wide": {
+		"atlas_coords": [
+			3,
+			2
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/door_wide.png",
+		"source_id": 1
+	},
+	"sprites_extended/fan_large": {
+		"atlas_coords": [
+			5,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/fan_large.png",
+		"source_id": 1
+	},
+	"sprites_extended/fan_small": {
+		"atlas_coords": [
+			6,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/fan_small.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_broken": {
+		"atlas_coords": [
+			7,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_broken.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_collapsed": {
+		"atlas_coords": [
+			8,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_collapsed.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_cracked": {
+		"atlas_coords": [
+			9,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_cracked.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_crumbs": {
+		"atlas_coords": [
+			10,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_crumbs.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_fragments": {
+		"atlas_coords": [
+			11,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_fragments.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_hole": {
+		"atlas_coords": [
+			12,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_hole.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_pit": {
+		"atlas_coords": [
+			13,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_pit.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_plain": {
+		"atlas_coords": [
+			14,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_plain.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_seamless": {
+		"atlas_coords": [
+			15,
+			2
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_seamless.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_shattered": {
+		"atlas_coords": [
+			0,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_shattered.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_speckled": {
+		"atlas_coords": [
+			1,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_speckled.png",
+		"source_id": 1
+	},
+	"sprites_extended/floor_split": {
+		"atlas_coords": [
+			2,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/floor_split.png",
+		"source_id": 1
+	},
+	"sprites_extended/flour_spill": {
+		"atlas_coords": [
+			3,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/flour_spill.png",
+		"source_id": 1
+	},
+	"sprites_extended/flour_stack": {
+		"atlas_coords": [
+			4,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/flour_stack.png",
+		"source_id": 1
+	},
+	"sprites_extended/flour_torn": {
+		"atlas_coords": [
+			5,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/flour_torn.png",
+		"source_id": 1
+	},
+	"sprites_extended/furnace_grate": {
+		"atlas_coords": [
+			6,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/furnace_grate.png",
+		"source_id": 1
+	},
+	"sprites_extended/heat_floor": {
+		"atlas_coords": [
+			7,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/heat_floor.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_bend": {
+		"atlas_coords": [
+			8,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_bend.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_corner": {
+		"atlas_coords": [
+			9,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_corner.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_corners": {
+		"atlas_coords": [
+			10,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_corners.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_cross": {
+		"atlas_coords": [
+			11,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_cross.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_fork": {
+		"atlas_coords": [
+			12,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_fork.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_full": {
+		"atlas_coords": [
+			13,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_full.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_horizontal": {
+		"atlas_coords": [
+			14,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_horizontal.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_pool": {
+		"atlas_coords": [
+			15,
+			3
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_pool.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_tee": {
+		"atlas_coords": [
+			0,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_tee.png",
+		"source_id": 1
+	},
+	"sprites_extended/lava_vertical": {
+		"atlas_coords": [
+			1,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/lava_vertical.png",
+		"source_id": 1
+	},
+	"sprites_extended/pipe_arch": {
+		"atlas_coords": [
+			2,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/pipe_arch.png",
+		"source_id": 1
+	},
+	"sprites_extended/pipe_elbow": {
+		"atlas_coords": [
+			4,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/pipe_elbow.png",
+		"source_id": 1
+	},
+	"sprites_extended/pipe_straight": {
+		"atlas_coords": [
+			5,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/pipe_straight.png",
+		"source_id": 1
+	},
+	"sprites_extended/pipe_tee": {
+		"atlas_coords": [
+			6,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/pipe_tee.png",
+		"source_id": 1
+	},
+	"sprites_extended/pipe_valve": {
+		"atlas_coords": [
+			7,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/pipe_valve.png",
+		"source_id": 1
+	},
+	"sprites_extended/safety_gate": {
+		"atlas_coords": [
+			9,
+			4
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/safety_gate.png",
+		"source_id": 1
+	},
+	"sprites_extended/spikes_four": {
+		"atlas_coords": [
+			11,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/spikes_four.png",
+		"source_id": 1
+	},
+	"sprites_extended/spikes_nine": {
+		"atlas_coords": [
+			12,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/spikes_nine.png",
+		"source_id": 1
+	},
+	"sprites_extended/spikes_six": {
+		"atlas_coords": [
+			13,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/spikes_six.png",
+		"source_id": 1
+	},
+	"sprites_extended/steam_round": {
+		"atlas_coords": [
+			14,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/steam_round.png",
+		"source_id": 1
+	},
+	"sprites_extended/steam_square": {
+		"atlas_coords": [
+			15,
+			4
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/steam_square.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_block": {
+		"atlas_coords": [
+			0,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_block.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_broken_left": {
+		"atlas_coords": [
+			1,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_broken_left.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_broken_right": {
+		"atlas_coords": [
+			2,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_broken_right.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_column": {
+		"atlas_coords": [
+			3,
+			5
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/wall_column.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_column_short": {
+		"atlas_coords": [
+			4,
+			5
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/wall_column_short.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_corner": {
+		"atlas_coords": [
+			5,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_corner.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_corner_ne": {
+		"atlas_coords": [
+			6,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_corner_ne.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_corner_nw": {
+		"atlas_coords": [
+			7,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_corner_nw.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_corner_sw": {
+		"atlas_coords": [
+			8,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_corner_sw.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_cracked": {
+		"atlas_coords": [
+			9,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_cracked.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_end": {
+		"atlas_coords": [
+			10,
+			5
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/wall_end.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_fractured": {
+		"atlas_coords": [
+			11,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_fractured.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_junction": {
+		"atlas_coords": [
+			12,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_junction.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_long": {
+		"atlas_coords": [
+			13,
+			5
+		],
+		"cells": [
+			2,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_long.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_low": {
+		"atlas_coords": [
+			15,
+			5
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_low.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_rubble_center": {
+		"atlas_coords": [
+			0,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_rubble_center.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_rubble_left": {
+		"atlas_coords": [
+			1,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_rubble_left.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_rubble_right": {
+		"atlas_coords": [
+			2,
+			7
+		],
+		"cells": [
+			1,
+			1
+		],
+		"source": "res://assets/sprites_extended/wall_rubble_right.png",
+		"source_id": 1
+	},
+	"sprites_extended/wall_thin": {
+		"atlas_coords": [
+			3,
+			7
+		],
+		"cells": [
+			1,
+			2
+		],
+		"source": "res://assets/sprites_extended/wall_thin.png",
+		"source_id": 1
+	}
+}

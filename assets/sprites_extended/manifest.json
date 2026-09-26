@@ -1,0 +1,914 @@
+{
+  "wall_long": {
+    "source_rect": [
+      25,
+      34,
+      214,
+      185
+    ],
+    "size": [
+      189,
+      151
+    ]
+  },
+  "wall_column": {
+    "source_rect": [
+      230,
+      34,
+      303,
+      185
+    ],
+    "size": [
+      73,
+      151
+    ]
+  },
+  "wall_corner_sw": {
+    "source_rect": [
+      322,
+      34,
+      419,
+      185
+    ],
+    "size": [
+      97,
+      151
+    ]
+  },
+  "wall_corner_ne": {
+    "source_rect": [
+      431,
+      34,
+      527,
+      185
+    ],
+    "size": [
+      96,
+      151
+    ]
+  },
+  "wall_corner_nw": {
+    "source_rect": [
+      539,
+      34,
+      630,
+      185
+    ],
+    "size": [
+      91,
+      151
+    ]
+  },
+  "wall_end": {
+    "source_rect": [
+      643,
+      34,
+      709,
+      185
+    ],
+    "size": [
+      66,
+      151
+    ]
+  },
+  "wall_thin": {
+    "source_rect": [
+      719,
+      34,
+      761,
+      185
+    ],
+    "size": [
+      42,
+      151
+    ]
+  },
+  "door": {
+    "source_rect": [
+      777,
+      34,
+      899,
+      185
+    ],
+    "size": [
+      122,
+      151
+    ]
+  },
+  "door_reinforced": {
+    "source_rect": [
+      922,
+      34,
+      1057,
+      185
+    ],
+    "size": [
+      135,
+      151
+    ]
+  },
+  "wall_cracked": {
+    "source_rect": [
+      1076,
+      34,
+      1198,
+      185
+    ],
+    "size": [
+      122,
+      151
+    ]
+  },
+  "wall_broken_left": {
+    "source_rect": [
+      1206,
+      34,
+      1300,
+      185
+    ],
+    "size": [
+      94,
+      151
+    ]
+  },
+  "wall_broken_right": {
+    "source_rect": [
+      1305,
+      34,
+      1426,
+      185
+    ],
+    "size": [
+      121,
+      151
+    ]
+  },
+  "wall_column_short": {
+    "source_rect": [
+      25,
+      190,
+      87,
+      334
+    ],
+    "size": [
+      62,
+      144
+    ]
+  },
+  "wall_corner": {
+    "source_rect": [
+      105,
+      190,
+      208,
+      334
+    ],
+    "size": [
+      103,
+      144
+    ]
+  },
+  "wall_junction": {
+    "source_rect": [
+      224,
+      190,
+      346,
+      334
+    ],
+    "size": [
+      122,
+      144
+    ]
+  },
+  "wall_low": {
+    "source_rect": [
+      362,
+      190,
+      472,
+      334
+    ],
+    "size": [
+      110,
+      144
+    ]
+  },
+  "door_wide": {
+    "source_rect": [
+      483,
+      190,
+      645,
+      334
+    ],
+    "size": [
+      162,
+      144
+    ]
+  },
+  "wall_block": {
+    "source_rect": [
+      660,
+      190,
+      760,
+      334
+    ],
+    "size": [
+      100,
+      144
+    ]
+  },
+  "door_steel": {
+    "source_rect": [
+      781,
+      190,
+      913,
+      334
+    ],
+    "size": [
+      132,
+      144
+    ]
+  },
+  "wall_fractured": {
+    "source_rect": [
+      931,
+      190,
+      1069,
+      334
+    ],
+    "size": [
+      138,
+      144
+    ]
+  },
+  "wall_rubble_left": {
+    "source_rect": [
+      1079,
+      190,
+      1197,
+      334
+    ],
+    "size": [
+      118,
+      144
+    ]
+  },
+  "wall_rubble_center": {
+    "source_rect": [
+      1205,
+      190,
+      1299,
+      334
+    ],
+    "size": [
+      94,
+      144
+    ]
+  },
+  "wall_rubble_right": {
+    "source_rect": [
+      1299,
+      190,
+      1425,
+      334
+    ],
+    "size": [
+      126,
+      144
+    ]
+  },
+  "floor_plain": {
+    "source_rect": [
+      25,
+      343,
+      146,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_speckled": {
+    "source_rect": [
+      153,
+      343,
+      274,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_crumbs": {
+    "source_rect": [
+      281,
+      343,
+      402,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_cracked": {
+    "source_rect": [
+      409,
+      343,
+      530,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_split": {
+    "source_rect": [
+      537,
+      343,
+      658,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_broken": {
+    "source_rect": [
+      665,
+      343,
+      786,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_shattered": {
+    "source_rect": [
+      793,
+      343,
+      914,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_hole": {
+    "source_rect": [
+      921,
+      343,
+      1042,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_pit": {
+    "source_rect": [
+      1049,
+      343,
+      1170,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_fragments": {
+    "source_rect": [
+      1177,
+      343,
+      1298,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "floor_collapsed": {
+    "source_rect": [
+      1305,
+      343,
+      1426,
+      465
+    ],
+    "size": [
+      121,
+      122
+    ]
+  },
+  "heat_floor": {
+    "source_rect": [
+      25,
+      479,
+      146,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_vertical": {
+    "source_rect": [
+      153,
+      479,
+      274,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_horizontal": {
+    "source_rect": [
+      281,
+      479,
+      402,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_corner": {
+    "source_rect": [
+      409,
+      479,
+      530,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_tee": {
+    "source_rect": [
+      537,
+      479,
+      658,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_cross": {
+    "source_rect": [
+      665,
+      479,
+      786,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_pool": {
+    "source_rect": [
+      793,
+      479,
+      914,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_fork": {
+    "source_rect": [
+      921,
+      479,
+      1042,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_corners": {
+    "source_rect": [
+      1049,
+      479,
+      1170,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_bend": {
+    "source_rect": [
+      1177,
+      479,
+      1298,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "lava_full": {
+    "source_rect": [
+      1305,
+      479,
+      1426,
+      602
+    ],
+    "size": [
+      121,
+      123
+    ]
+  },
+  "spikes_four": {
+    "source_rect": [
+      26,
+      606,
+      146,
+      745
+    ],
+    "size": [
+      120,
+      139
+    ]
+  },
+  "spikes_six": {
+    "source_rect": [
+      152,
+      606,
+      275,
+      745
+    ],
+    "size": [
+      123,
+      139
+    ]
+  },
+  "spikes_nine": {
+    "source_rect": [
+      281,
+      606,
+      401,
+      745
+    ],
+    "size": [
+      120,
+      139
+    ]
+  },
+  "steam_square": {
+    "source_rect": [
+      410,
+      606,
+      528,
+      745
+    ],
+    "size": [
+      118,
+      139
+    ]
+  },
+  "steam_round": {
+    "source_rect": [
+      539,
+      606,
+      656,
+      745
+    ],
+    "size": [
+      117,
+      139
+    ]
+  },
+  "fan_small": {
+    "source_rect": [
+      671,
+      606,
+      793,
+      745
+    ],
+    "size": [
+      122,
+      139
+    ]
+  },
+  "fan_large": {
+    "source_rect": [
+      807,
+      606,
+      929,
+      745
+    ],
+    "size": [
+      122,
+      139
+    ]
+  },
+  "belt_broken": {
+    "source_rect": [
+      948,
+      606,
+      1177,
+      745
+    ],
+    "size": [
+      229,
+      139
+    ]
+  },
+  "belt_short": {
+    "source_rect": [
+      1186,
+      606,
+      1297,
+      745
+    ],
+    "size": [
+      111,
+      139
+    ]
+  },
+  "furnace_grate": {
+    "source_rect": [
+      1302,
+      606,
+      1425,
+      745
+    ],
+    "size": [
+      123,
+      139
+    ]
+  },
+  "crate": {
+    "source_rect": [
+      26,
+      760,
+      147,
+      895
+    ],
+    "size": [
+      121,
+      135
+    ]
+  },
+  "crate_cracked": {
+    "source_rect": [
+      155,
+      760,
+      272,
+      895
+    ],
+    "size": [
+      117,
+      135
+    ]
+  },
+  "crate_broken": {
+    "source_rect": [
+      272,
+      760,
+      395,
+      895
+    ],
+    "size": [
+      123,
+      135
+    ]
+  },
+  "flour_spill": {
+    "source_rect": [
+      392,
+      760,
+      556,
+      895
+    ],
+    "size": [
+      164,
+      135
+    ]
+  },
+  "flour_stack": {
+    "source_rect": [
+      557,
+      760,
+      676,
+      895
+    ],
+    "size": [
+      119,
+      135
+    ]
+  },
+  "flour_torn": {
+    "source_rect": [
+      659,
+      760,
+      837,
+      895
+    ],
+    "size": [
+      178,
+      135
+    ]
+  },
+  "chocolate_drops": {
+    "source_rect": [
+      829,
+      760,
+      979,
+      895
+    ],
+    "size": [
+      150,
+      135
+    ]
+  },
+  "chocolate_puddle": {
+    "source_rect": [
+      966,
+      760,
+      1178,
+      895
+    ],
+    "size": [
+      212,
+      135
+    ]
+  },
+  "chocolate_drip": {
+    "source_rect": [
+      1135,
+      760,
+      1255,
+      895
+    ],
+    "size": [
+      120,
+      135
+    ]
+  },
+  "butter_spill": {
+    "source_rect": [
+      1221,
+      760,
+      1428,
+      895
+    ],
+    "size": [
+      207,
+      135
+    ]
+  },
+  "pipe_straight": {
+    "source_rect": [
+      33,
+      900,
+      157,
+      1028
+    ],
+    "size": [
+      124,
+      128
+    ]
+  },
+  "pipe_elbow": {
+    "source_rect": [
+      162,
+      900,
+      269,
+      1028
+    ],
+    "size": [
+      107,
+      128
+    ]
+  },
+  "pipe_tee": {
+    "source_rect": [
+      274,
+      900,
+      384,
+      1028
+    ],
+    "size": [
+      110,
+      128
+    ]
+  },
+  "pipe_arch": {
+    "source_rect": [
+      393,
+      900,
+      578,
+      1028
+    ],
+    "size": [
+      185,
+      128
+    ]
+  },
+  "pipe_valve": {
+    "source_rect": [
+      581,
+      900,
+      758,
+      1028
+    ],
+    "size": [
+      177,
+      128
+    ]
+  },
+  "safety_gate": {
+    "source_rect": [
+      759,
+      900,
+      942,
+      1028
+    ],
+    "size": [
+      183,
+      128
+    ]
+  },
+  "bollard_tall": {
+    "source_rect": [
+      959,
+      900,
+      1025,
+      1028
+    ],
+    "size": [
+      66,
+      128
+    ]
+  },
+  "bollard_medium": {
+    "source_rect": [
+      1029,
+      900,
+      1092,
+      1028
+    ],
+    "size": [
+      63,
+      128
+    ]
+  },
+  "bollard_short": {
+    "source_rect": [
+      1100,
+      900,
+      1176,
+      1028
+    ],
+    "size": [
+      76,
+      128
+    ]
+  },
+  "bollard_steel": {
+    "source_rect": [
+      1185,
+      900,
+      1267,
+      1028
+    ],
+    "size": [
+      82,
+      128
+    ]
+  },
+  "barrier": {
+    "source_rect": [
+      1276,
+      900,
+      1421,
+      1028
+    ],
+    "size": [
+      145,
+      128
+    ]
+  }
+}

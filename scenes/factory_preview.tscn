@@ -1,927 +1,777 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://crv3diqrgq222"]
 
-[ext_resource type="Texture2D" path="res://assets/sprites/conveyor_corner_right.png" id="1"]
-[ext_resource type="Texture2D" path="res://assets/sprites/conveyor_end.png" id="2"]
-[ext_resource type="Texture2D" path="res://assets/sprites/conveyor_horizontal.png" id="3"]
-[ext_resource type="Texture2D" path="res://assets/sprites/conveyor_junction.png" id="4"]
-[ext_resource type="Texture2D" path="res://assets/sprites/conveyor_vertical.png" id="5"]
-[ext_resource type="Texture2D" path="res://assets/sprites/crate_closed.png" id="6"]
-[ext_resource type="Texture2D" path="res://assets/sprites/crate_cross.png" id="7"]
-[ext_resource type="Texture2D" path="res://assets/sprites/crate_empty.png" id="8"]
-[ext_resource type="Texture2D" path="res://assets/sprites/floor_icing_seamless.png" id="9"]
-[ext_resource type="Texture2D" path="res://assets/sprites/floor_metal.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dyj6rey5q8d3t" path="res://assets/sprites/conveyor_corner_right.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://b8d7gq0s6jkmb" path="res://assets/sprites/conveyor_end.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bxv15f5jopafb" path="res://assets/sprites/conveyor_horizontal.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cod1dasyhmeoy" path="res://assets/sprites/conveyor_junction.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dlqaymvpwxyim" path="res://assets/sprites/conveyor_vertical.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ujefaexdukj5" path="res://assets/sprites/crate_closed.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dfs2le712wgtj" path="res://assets/sprites/crate_cross.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://brrk1yacc58pk" path="res://assets/sprites/crate_empty.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dd5374tqgjxfs" path="res://assets/sprites/floor_icing_seamless.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://djk50kpi6pnfk" path="res://assets/sprites/floor_metal.png" id="10"]
 
-[node name="FactoryPreview" type="Node2D"]
+[node name="FactoryPreview" type="Node2D" unique_id=1930475686]
 
-[node name="Backdrop" type="Polygon2D" parent="."]
+[node name="Backdrop" type="Polygon2D" parent="." unique_id=668207294]
+color = Color(0.18, 0.125, 0.1, 1)
 polygon = PackedVector2Array(-2000, -2000, 4000, -2000, 4000, 4000, -2000, 4000)
-color = Color(0.18, 0.125, 0.10, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=28138857]
 position = Vector2(720, 540)
 
-[node name="Floor" type="Node2D" parent="."]
+[node name="Floor" type="Node2D" parent="." unique_id=114029126]
 
-[node name="floor_metal_000" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_000" type="Sprite2D" parent="Floor" unique_id=314114094]
 position = Vector2(120, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_001" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_001" type="Sprite2D" parent="Floor" unique_id=1577538442]
 position = Vector2(220, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_002" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_002" type="Sprite2D" parent="Floor" unique_id=854063485]
 position = Vector2(320, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_003" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_003" type="Sprite2D" parent="Floor" unique_id=285284701]
 position = Vector2(420, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_004" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_004" type="Sprite2D" parent="Floor" unique_id=1653470144]
 position = Vector2(520, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_005" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_005" type="Sprite2D" parent="Floor" unique_id=230380274]
 position = Vector2(620, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_006" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_006" type="Sprite2D" parent="Floor" unique_id=412902165]
 position = Vector2(720, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_007" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_007" type="Sprite2D" parent="Floor" unique_id=1119412707]
 position = Vector2(820, 150)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_008" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_008" type="Sprite2D" parent="Floor" unique_id=926061458]
 position = Vector2(920, 150)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_009" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_009" type="Sprite2D" parent="Floor" unique_id=1662505189]
 position = Vector2(1020, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_010" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_010" type="Sprite2D" parent="Floor" unique_id=1966192463]
 position = Vector2(1120, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_011" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_011" type="Sprite2D" parent="Floor" unique_id=827684025]
 position = Vector2(1220, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_012" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_012" type="Sprite2D" parent="Floor" unique_id=1654284324]
 position = Vector2(1320, 150)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_013" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_013" type="Sprite2D" parent="Floor" unique_id=416106919]
 position = Vector2(120, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_014" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_014" type="Sprite2D" parent="Floor" unique_id=56112782]
 position = Vector2(220, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_015" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_015" type="Sprite2D" parent="Floor" unique_id=956423343]
 position = Vector2(320, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_016" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_016" type="Sprite2D" parent="Floor" unique_id=2024278484]
 position = Vector2(420, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_017" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_017" type="Sprite2D" parent="Floor" unique_id=2053982424]
 position = Vector2(520, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_018" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_018" type="Sprite2D" parent="Floor" unique_id=844169525]
 position = Vector2(620, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_019" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_019" type="Sprite2D" parent="Floor" unique_id=1721368957]
 position = Vector2(720, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_020" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_020" type="Sprite2D" parent="Floor" unique_id=1503065356]
 position = Vector2(820, 250)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_021" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_021" type="Sprite2D" parent="Floor" unique_id=1468177848]
 position = Vector2(920, 250)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_022" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_022" type="Sprite2D" parent="Floor" unique_id=1877589886]
 position = Vector2(1020, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_023" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_023" type="Sprite2D" parent="Floor" unique_id=402199595]
 position = Vector2(1120, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_024" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_024" type="Sprite2D" parent="Floor" unique_id=695188567]
 position = Vector2(1220, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_025" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_025" type="Sprite2D" parent="Floor" unique_id=1654887012]
 position = Vector2(1320, 250)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_026" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_026" type="Sprite2D" parent="Floor" unique_id=1899731811]
 position = Vector2(120, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_027" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_027" type="Sprite2D" parent="Floor" unique_id=1698025037]
 position = Vector2(220, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_028" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_028" type="Sprite2D" parent="Floor" unique_id=939806324]
 position = Vector2(320, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_029" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_029" type="Sprite2D" parent="Floor" unique_id=768986061]
 position = Vector2(420, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_030" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_030" type="Sprite2D" parent="Floor" unique_id=1563454254]
 position = Vector2(520, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_031" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_031" type="Sprite2D" parent="Floor" unique_id=1872852150]
 position = Vector2(620, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_032" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_032" type="Sprite2D" parent="Floor" unique_id=1163482304]
 position = Vector2(720, 350)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_033" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_033" type="Sprite2D" parent="Floor" unique_id=1317218099]
 position = Vector2(820, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_034" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_034" type="Sprite2D" parent="Floor" unique_id=60000093]
 position = Vector2(920, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_035" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_035" type="Sprite2D" parent="Floor" unique_id=751091427]
 position = Vector2(1020, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_036" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_036" type="Sprite2D" parent="Floor" unique_id=1994679663]
 position = Vector2(1120, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_037" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_037" type="Sprite2D" parent="Floor" unique_id=1521589053]
 position = Vector2(1220, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_038" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_038" type="Sprite2D" parent="Floor" unique_id=1420970558]
 position = Vector2(1320, 350)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_039" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_039" type="Sprite2D" parent="Floor" unique_id=541284148]
 position = Vector2(120, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_040" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_040" type="Sprite2D" parent="Floor" unique_id=548864236]
 position = Vector2(220, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_041" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_041" type="Sprite2D" parent="Floor" unique_id=560605041]
 position = Vector2(320, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_042" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_042" type="Sprite2D" parent="Floor" unique_id=1032628024]
 position = Vector2(420, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_043" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_043" type="Sprite2D" parent="Floor" unique_id=809315636]
 position = Vector2(520, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_044" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_044" type="Sprite2D" parent="Floor" unique_id=1616915982]
 position = Vector2(620, 450)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_045" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_045" type="Sprite2D" parent="Floor" unique_id=32441583]
 position = Vector2(720, 450)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_046" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_046" type="Sprite2D" parent="Floor" unique_id=585758954]
 position = Vector2(820, 450)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_047" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_047" type="Sprite2D" parent="Floor" unique_id=722460874]
 position = Vector2(920, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_048" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_048" type="Sprite2D" parent="Floor" unique_id=710060285]
 position = Vector2(1020, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_049" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_049" type="Sprite2D" parent="Floor" unique_id=1409355284]
 position = Vector2(1120, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_050" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_050" type="Sprite2D" parent="Floor" unique_id=1900855637]
 position = Vector2(1220, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_051" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_051" type="Sprite2D" parent="Floor" unique_id=1701435728]
 position = Vector2(1320, 450)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_052" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_052" type="Sprite2D" parent="Floor" unique_id=1954150889]
 position = Vector2(120, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_053" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_053" type="Sprite2D" parent="Floor" unique_id=1529379970]
 position = Vector2(220, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_054" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_054" type="Sprite2D" parent="Floor" unique_id=1610725752]
 position = Vector2(320, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_055" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_055" type="Sprite2D" parent="Floor" unique_id=1557443855]
 position = Vector2(420, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_056" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_056" type="Sprite2D" parent="Floor" unique_id=1956589729]
 position = Vector2(520, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_057" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_057" type="Sprite2D" parent="Floor" unique_id=356595474]
 position = Vector2(620, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_058" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_058" type="Sprite2D" parent="Floor" unique_id=1192072680]
 position = Vector2(720, 550)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_059" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_059" type="Sprite2D" parent="Floor" unique_id=496034345]
 position = Vector2(820, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_060" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_060" type="Sprite2D" parent="Floor" unique_id=269812261]
 position = Vector2(920, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_061" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_061" type="Sprite2D" parent="Floor" unique_id=1629467551]
 position = Vector2(1020, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_062" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_062" type="Sprite2D" parent="Floor" unique_id=1903123318]
 position = Vector2(1120, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_063" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_063" type="Sprite2D" parent="Floor" unique_id=729470966]
 position = Vector2(1220, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_064" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_064" type="Sprite2D" parent="Floor" unique_id=299209337]
 position = Vector2(1320, 550)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_065" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_065" type="Sprite2D" parent="Floor" unique_id=1894689109]
 position = Vector2(120, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_066" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_066" type="Sprite2D" parent="Floor" unique_id=1636494617]
 position = Vector2(220, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_067" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_067" type="Sprite2D" parent="Floor" unique_id=1417066489]
 position = Vector2(320, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_068" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_068" type="Sprite2D" parent="Floor" unique_id=484294174]
 position = Vector2(420, 650)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_069" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_069" type="Sprite2D" parent="Floor" unique_id=710652583]
 position = Vector2(520, 650)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_070" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_070" type="Sprite2D" parent="Floor" unique_id=1727293278]
 position = Vector2(620, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_071" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_071" type="Sprite2D" parent="Floor" unique_id=57994858]
 position = Vector2(720, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_072" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_072" type="Sprite2D" parent="Floor" unique_id=572174898]
 position = Vector2(820, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_073" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_073" type="Sprite2D" parent="Floor" unique_id=1243014337]
 position = Vector2(920, 650)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_074" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_074" type="Sprite2D" parent="Floor" unique_id=1354344286]
 position = Vector2(1020, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_075" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_075" type="Sprite2D" parent="Floor" unique_id=205100135]
 position = Vector2(1120, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_076" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_076" type="Sprite2D" parent="Floor" unique_id=630820564]
 position = Vector2(1220, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_077" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_077" type="Sprite2D" parent="Floor" unique_id=903972036]
 position = Vector2(1320, 650)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_078" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_078" type="Sprite2D" parent="Floor" unique_id=1796145667]
 position = Vector2(120, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_079" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_079" type="Sprite2D" parent="Floor" unique_id=216582097]
 position = Vector2(220, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_080" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_080" type="Sprite2D" parent="Floor" unique_id=840613793]
 position = Vector2(320, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_081" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_081" type="Sprite2D" parent="Floor" unique_id=550253949]
 position = Vector2(420, 750)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_082" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_082" type="Sprite2D" parent="Floor" unique_id=2071624893]
 position = Vector2(520, 750)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_083" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_083" type="Sprite2D" parent="Floor" unique_id=1781219501]
 position = Vector2(620, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_084" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_084" type="Sprite2D" parent="Floor" unique_id=1933610874]
 position = Vector2(720, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_085" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_085" type="Sprite2D" parent="Floor" unique_id=745195008]
 position = Vector2(820, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_086" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_086" type="Sprite2D" parent="Floor" unique_id=2021959402]
 position = Vector2(920, 750)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_087" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_087" type="Sprite2D" parent="Floor" unique_id=2009310932]
 position = Vector2(1020, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_088" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_088" type="Sprite2D" parent="Floor" unique_id=1375960453]
 position = Vector2(1120, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_089" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_089" type="Sprite2D" parent="Floor" unique_id=438862362]
 position = Vector2(1220, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_090" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_090" type="Sprite2D" parent="Floor" unique_id=1217223116]
 position = Vector2(1320, 750)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_091" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_091" type="Sprite2D" parent="Floor" unique_id=132343933]
 position = Vector2(120, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_092" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_092" type="Sprite2D" parent="Floor" unique_id=1126953008]
 position = Vector2(220, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_093" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_093" type="Sprite2D" parent="Floor" unique_id=2014474616]
 position = Vector2(320, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_094" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_094" type="Sprite2D" parent="Floor" unique_id=884870605]
 position = Vector2(420, 850)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_095" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_095" type="Sprite2D" parent="Floor" unique_id=409060555]
 position = Vector2(520, 850)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_096" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_096" type="Sprite2D" parent="Floor" unique_id=1174116711]
 position = Vector2(620, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_097" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_097" type="Sprite2D" parent="Floor" unique_id=547896092]
 position = Vector2(720, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_098" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_098" type="Sprite2D" parent="Floor" unique_id=1284473259]
 position = Vector2(820, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_099" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_099" type="Sprite2D" parent="Floor" unique_id=1962664653]
 position = Vector2(920, 850)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_100" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_100" type="Sprite2D" parent="Floor" unique_id=2009905037]
 position = Vector2(1020, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_101" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_101" type="Sprite2D" parent="Floor" unique_id=107916816]
 position = Vector2(1120, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_102" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_102" type="Sprite2D" parent="Floor" unique_id=1374003098]
 position = Vector2(1220, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_103" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_103" type="Sprite2D" parent="Floor" unique_id=1886480013]
 position = Vector2(1320, 850)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_104" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_104" type="Sprite2D" parent="Floor" unique_id=250826184]
 position = Vector2(120, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_105" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_105" type="Sprite2D" parent="Floor" unique_id=1844365069]
 position = Vector2(220, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_106" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_106" type="Sprite2D" parent="Floor" unique_id=834354387]
 position = Vector2(320, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_107" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_107" type="Sprite2D" parent="Floor" unique_id=1897229646]
 position = Vector2(420, 950)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_icing_seamless_108" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_108" type="Sprite2D" parent="Floor" unique_id=2137172562]
 position = Vector2(520, 950)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_109" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_109" type="Sprite2D" parent="Floor" unique_id=422602095]
 position = Vector2(620, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_110" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_110" type="Sprite2D" parent="Floor" unique_id=389438436]
 position = Vector2(720, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_111" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_111" type="Sprite2D" parent="Floor" unique_id=745643704]
 position = Vector2(820, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_icing_seamless_112" type="Sprite2D" parent="Floor"]
+[node name="floor_icing_seamless_112" type="Sprite2D" parent="Floor" unique_id=2071795597]
 position = Vector2(920, 950)
-rotation = 0.0
-scale = Vector2(0.850000000, 0.850000000)
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("9")
 
-[node name="floor_metal_113" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_113" type="Sprite2D" parent="Floor" unique_id=381358262]
 position = Vector2(1020, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_114" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_114" type="Sprite2D" parent="Floor" unique_id=1384080566]
 position = Vector2(1120, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_115" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_115" type="Sprite2D" parent="Floor" unique_id=1320536795]
 position = Vector2(1220, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="floor_metal_116" type="Sprite2D" parent="Floor"]
+[node name="floor_metal_116" type="Sprite2D" parent="Floor" unique_id=488133188]
 position = Vector2(1320, 950)
-rotation = 0.0
-scale = Vector2(0.733812950, 0.733812950)
+scale = Vector2(0.7338129, 0.7338129)
 texture = ExtResource("10")
 
-[node name="Conveyors" type="Node2D" parent="."]
+[node name="Conveyors" type="Node2D" parent="." unique_id=908243130]
 
-[node name="conveyor_horizontal_117" type="Sprite2D" parent="Conveyors"]
-position = Vector2(250, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+[node name="conveyor_horizontal_117" type="Sprite2D" parent="Conveyors" unique_id=1413776674]
+position = Vector2(270, 328)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_118" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_118" type="Sprite2D" parent="Conveyors" unique_id=742251039]
 position = Vector2(370, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_119" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_119" type="Sprite2D" parent="Conveyors" unique_id=357586521]
 position = Vector2(490, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_120" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_120" type="Sprite2D" parent="Conveyors" unique_id=296226889]
 position = Vector2(610, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_121" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_121" type="Sprite2D" parent="Conveyors" unique_id=1574714976]
 position = Vector2(730, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_122" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_122" type="Sprite2D" parent="Conveyors" unique_id=757215418]
 position = Vector2(850, 326)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_end_123" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_end_123" type="Sprite2D" parent="Conveyors" unique_id=1116786559]
 position = Vector2(161, 326)
-rotation = 0.0
-scale = Vector2(0.800000000, 0.849557522)
+scale = Vector2(0.8, 0.8495575)
 texture = ExtResource("2")
 
-[node name="conveyor_corner_right_124" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_corner_right_124" type="Sprite2D" parent="Conveyors" unique_id=261201097]
 position = Vector2(935, 327)
-rotation = 0.0
-scale = Vector2(0.936936937, 0.846153846)
+scale = Vector2(0.9369369, 0.84615386)
 texture = ExtResource("1")
 
-[node name="conveyor_vertical_125" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_vertical_125" type="Sprite2D" parent="Conveyors" unique_id=1128003755]
 position = Vector2(935, 427)
-rotation = 0.0
-scale = Vector2(1.010526316, 0.830769231)
+scale = Vector2(1.0105263, 0.83076924)
 texture = ExtResource("5")
 
-[node name="conveyor_vertical_126" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_vertical_126" type="Sprite2D" parent="Conveyors" unique_id=1351290350]
 position = Vector2(935, 527)
-rotation = 0.0
-scale = Vector2(1.010526316, 0.830769231)
+scale = Vector2(1.0105263, 0.83076924)
 texture = ExtResource("5")
 
-[node name="conveyor_vertical_127" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_vertical_127" type="Sprite2D" parent="Conveyors" unique_id=599249190]
 position = Vector2(935, 627)
-rotation = 0.0
-scale = Vector2(1.010526316, 0.830769231)
+scale = Vector2(1.0105263, 0.83076924)
 texture = ExtResource("5")
 
-[node name="conveyor_vertical_128" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_vertical_128" type="Sprite2D" parent="Conveyors" unique_id=60986202]
 position = Vector2(935, 727)
-rotation = 0.0
-scale = Vector2(1.010526316, 0.830769231)
+scale = Vector2(1.0105263, 0.83076924)
 texture = ExtResource("5")
 
-[node name="conveyor_horizontal_129" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_129" type="Sprite2D" parent="Conveyors" unique_id=252664039]
 position = Vector2(570, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_130" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_130" type="Sprite2D" parent="Conveyors" unique_id=1268141382]
 position = Vector2(690, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_131" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_131" type="Sprite2D" parent="Conveyors" unique_id=500427407]
 position = Vector2(810, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_132" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_132" type="Sprite2D" parent="Conveyors" unique_id=503625149]
 position = Vector2(930, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_133" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_133" type="Sprite2D" parent="Conveyors" unique_id=776838724]
 position = Vector2(1050, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_134" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_134" type="Sprite2D" parent="Conveyors" unique_id=514586619]
 position = Vector2(1170, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_horizontal_135" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_horizontal_135" type="Sprite2D" parent="Conveyors" unique_id=2100710685]
 position = Vector2(1290, 789)
-rotation = 0.0
-scale = Vector2(0.780487805, 0.827586207)
+scale = Vector2(0.7804878, 0.82758623)
 texture = ExtResource("3")
 
-[node name="conveyor_junction_136" type="Sprite2D" parent="Conveyors"]
+[node name="conveyor_junction_136" type="Sprite2D" parent="Conveyors" unique_id=2030148230]
 position = Vector2(935, 784)
-rotation = 0.0
-scale = Vector2(0.902654867, 0.776978417)
+scale = Vector2(0.9026549, 0.77697843)
 texture = ExtResource("4")
 
-[node name="Boxes" type="Node2D" parent="."]
+[node name="Boxes" type="Node2D" parent="." unique_id=448705218]
 
-[node name="crate_cross_137" type="Sprite2D" parent="Boxes"]
+[node name="crate_cross_137" type="Sprite2D" parent="Boxes" unique_id=971485168]
 position = Vector2(547, 224)
-rotation = 0.0
-scale = Vector2(0.882978723, 0.880341880)
+scale = Vector2(0.88297874, 0.8803419)
 texture = ExtResource("7")
 
-[node name="crate_closed_138" type="Sprite2D" parent="Boxes"]
+[node name="crate_closed_138" type="Sprite2D" parent="Boxes" unique_id=234867205]
 position = Vector2(1220, 275)
-rotation = 0.0
-scale = Vector2(0.733333333, 0.733870968)
+scale = Vector2(0.73333335, 0.733871)
 texture = ExtResource("6")
 
-[node name="crate_cross_139" type="Sprite2D" parent="Boxes"]
+[node name="crate_cross_139" type="Sprite2D" parent="Boxes" unique_id=1431096022]
 position = Vector2(1318, 278)
-rotation = 0.0
-scale = Vector2(0.882978723, 0.880341880)
+scale = Vector2(0.88297874, 0.8803419)
 texture = ExtResource("7")
 
-[node name="crate_closed_140" type="Sprite2D" parent="Boxes"]
+[node name="crate_closed_140" type="Sprite2D" parent="Boxes" unique_id=1731590834]
 position = Vector2(445, 433)
-rotation = 0.0
-scale = Vector2(0.733333333, 0.733870968)
+scale = Vector2(0.73333335, 0.733871)
 texture = ExtResource("6")
 
-[node name="crate_cross_141" type="Sprite2D" parent="Boxes"]
+[node name="crate_cross_141" type="Sprite2D" parent="Boxes" unique_id=201559518]
 position = Vector2(545, 433)
-rotation = 0.0
-scale = Vector2(0.851063830, 0.854700855)
+scale = Vector2(0.85106385, 0.85470086)
 texture = ExtResource("7")
 
-[node name="crate_empty_142" type="Sprite2D" parent="Boxes"]
+[node name="crate_empty_142" type="Sprite2D" parent="Boxes" unique_id=344495177]
 position = Vector2(638, 433)
-rotation = 0.0
-scale = Vector2(0.842105263, 0.843478261)
+scale = Vector2(0.84210527, 0.84347826)
 texture = ExtResource("8")
 
-[node name="crate_cross_143" type="Sprite2D" parent="Boxes"]
+[node name="crate_cross_143" type="Sprite2D" parent="Boxes" unique_id=395689809]
 position = Vector2(1304, 537)
-rotation = 0.0
-scale = Vector2(0.882978723, 0.880341880)
+scale = Vector2(0.88297874, 0.8803419)
 texture = ExtResource("7")
 
-[node name="crate_empty_144" type="Sprite2D" parent="Boxes"]
+[node name="crate_empty_144" type="Sprite2D" parent="Boxes" unique_id=1423222044]
 position = Vector2(337, 648)
-rotation = 0.0
-scale = Vector2(0.894736842, 0.895652174)
+scale = Vector2(0.8947368, 0.8956522)
 texture = ExtResource("8")
 
-[node name="crate_closed_145" type="Sprite2D" parent="Boxes"]
+[node name="crate_closed_145" type="Sprite2D" parent="Boxes" unique_id=23260472]
 position = Vector2(139, 761)
-rotation = 0.0
-scale = Vector2(0.750000000, 0.750000000)
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("6")
 
-[node name="crate_cross_146" type="Sprite2D" parent="Boxes"]
+[node name="crate_cross_146" type="Sprite2D" parent="Boxes" unique_id=1496434417]
 position = Vector2(925, 916)
-rotation = 0.0
-scale = Vector2(0.914893617, 0.914529915)
+scale = Vector2(0.9148936, 0.9145299)
 texture = ExtResource("7")
 
-[node name="crate_empty_147" type="Sprite2D" parent="Boxes"]
+[node name="crate_empty_147" type="Sprite2D" parent="Boxes" unique_id=1054854872]
 position = Vector2(1026, 916)
-rotation = 0.0
-scale = Vector2(0.884210526, 0.886956522)
+scale = Vector2(0.8842105, 0.8869565)
 texture = ExtResource("8")
 
-[node name="crate_closed_148" type="Sprite2D" parent="Boxes"]
+[node name="crate_closed_148" type="Sprite2D" parent="Boxes" unique_id=1396445394]
 position = Vector2(1197, 916)
-rotation = 0.0
-scale = Vector2(0.758333333, 0.758064516)
+scale = Vector2(0.7583333, 0.7580645)
 texture = ExtResource("6")
 
-[node name="crate_closed_149" type="Sprite2D" parent="Boxes"]
+[node name="crate_closed_149" type="Sprite2D" parent="Boxes" unique_id=1099771020]
 position = Vector2(1298, 916)
-rotation = 0.0
-scale = Vector2(0.716666667, 0.717741935)
+scale = Vector2(0.71666664, 0.7177419)
 texture = ExtResource("6")
