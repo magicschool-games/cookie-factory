@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+signal jump_started
+signal landed
+
 const SPEED = 300.0
 
 @export var is_controlled := false
@@ -72,18 +75,20 @@ func _physics_process(delta: float) -> void:
 	if launch_pending:
 		velocity = Vector2.ZERO
 		return
-	if not is_controlled and not is_launched:
+	if not is_controlled and not is_launched and roll_direction == Vector2.ZERO:
 		velocity = Vector2.ZERO
 		return
 	var input_dir := Vector2.ZERO
-	if Input.is_physical_key_pressed(KEY_A):
+	if Input.is_physical_key_pressed(KEY_A) or Input.is_physical_key_pressed(KEY_LEFT):
 		input_dir.x -= 1
-	if Input.is_physical_key_pressed(KEY_D):
+	if Input.is_physical_key_pressed(KEY_D) or Input.is_physical_key_pressed(KEY_RIGHT):
 		input_dir.x += 1
-	if Input.is_physical_key_pressed(KEY_W):
+	if Input.is_physical_key_pressed(KEY_W) or Input.is_physical_key_pressed(KEY_UP):
 		input_dir.y -= 1
-	if Input.is_physical_key_pressed(KEY_S):
+	if Input.is_physical_key_pressed(KEY_S) or Input.is_physical_key_pressed(KEY_DOWN):
 		input_dir.y += 1
+	if not is_controlled:
+		input_dir = Vector2.ZERO
 
 	# A throw consumes the current movement press. Holding it must not make
 	# the launcher walk after the passenger lands.
@@ -111,6 +116,7 @@ func _physics_process(delta: float) -> void:
 		roll_distance = footprint.dot(roll_direction.abs())
 		roll_travel = 0.0
 		face_flipped = false
+		jump_started.emit()
 
 	# Finish the current flip even when the movement key is released.
 	velocity = roll_direction * minf(SPEED, (roll_distance - roll_travel) / delta)
@@ -146,6 +152,7 @@ func _physics_process(delta: float) -> void:
 		sprite.position = Vector2.ZERO
 		roll_shadow.visible = false
 		velocity = Vector2.ZERO
+		landed.emit()
 
 
 func launch_flip(direction: Vector2, distance: float) -> void:
@@ -156,6 +163,7 @@ func launch_flip(direction: Vector2, distance: float) -> void:
 	roll_distance = distance
 	roll_travel = 0.0
 	face_flipped = false
+	jump_started.emit()
 
 
 func begin_fling(passenger: CharacterBody2D, direction: Vector2, distance: float) -> void:

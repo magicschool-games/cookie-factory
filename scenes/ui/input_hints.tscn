@@ -63,7 +63,7 @@ disable_toggle = true
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/InteractHintContainer" unique_id=1911254998]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Interact"
+text = "Switch controls"
 
 [node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1689139795]
 layout_mode = 2

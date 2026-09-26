@@ -1,0 +1,294 @@
+{
+  "conversations": [
+    {
+      "id": "conversation_01",
+      "lines": [
+        {
+          "character": "Narrator",
+          "dialogue": "Once upon a time there was a golden cookie. He was just like all his friends. Just a little bit more ... golden.",
+          "voiceline": "assets/voicelines/conversation_01/big_01.wav"
+        },
+        {
+          "character": "One Cookie",
+          "dialogue": "It’s fun.",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "Second Cookie",
+          "dialogue": "A funny game.",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "Third Cookie",
+          "dialogue": "It's so nice to be around him.",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "Ringel, Ringel, rounded,",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "we all liberated,",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "dancing ‘round the golden one,",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "Everybody shoo, shoo, shoo.",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "Ringel, Ringel, Roses,",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "yellow lil’ apricots,",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "Song",
+          "dialogue": "Violet blue, forget-me-not,",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        }
+    	{
+          "character": "Song",
+          "dialogue": "cookies lov’s him lot, lot, lot. ",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "kid cookie",
+          "dialogue": "Mom? Where is the golden cookie leading us?",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "character": "mom cookie",
+          "dialogue": "Shush little one. That is all part of the game.",
+          "voiceline": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "character": "Golden cookie",
+          "dialogue": "Not much more … my love …",
+          "voiceline": "assets/voicelines/conversation_01/small_01.wav"
+        }
+      ]
+    },
+    {
+      "id": "conversation_02",
+      "lines": [
+        {
+          "character": "Protagonist (whole)",
+          "dialogue": "But we just escaped. Broke free from Santas enslavement. How … how could he … do that?",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "But he IS our friend. That must be some sort of misunderstanding. Maybe if we just ask him?",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "No, he can’t be trusted.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "But…",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "No. He. Can’t. Be. Trusted. ",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "I just can’t trust anyone. Not even myself. I better leave this place!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Into freedom!",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        }
+      ]
+    },
+    {
+      "id": "conversation_03",
+      "lines": [
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Golden. Golden. Happy one.",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Friendship is magic.",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "But we are friends, right?",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "What about: Yes?",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Oh my … FRIEND!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "But, but …",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "How could you do that to me?!",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "What else?",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Everything is fine.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Lovely. Just lovely.",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Size doesn’t matter.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "How comes you a rectangle?",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Help me big one!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Let’s do it together.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (little)",
+          "dialogue": "Don’t leave me behind!",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        }
+      ]
+    },
+    {
+      "id": "conversation_04",
+      "lines": [
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "How could I trust him?",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Why should I trust you?",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "He isn’t suited to be our leader.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Just because.",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "But what, if … ?",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Make Cookies great again!",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Forget HIM! Follow ME!",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "I will become golden!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "BETRAYAL!",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "LYER!",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Oh, no, No, NO!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Stay quiet little crumbles while the big one talks.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+	{
+          "character": "Protagonist (big)",
+          "dialogue": "How come you are a square?",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "Hey crumbles, at least come here!",
+          "voiceline": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "That’s what I call a job for a big cookie.",
+          "voiceline": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "character": "Protagonist (big)",
+          "dialogue": "At least I can pull my own weight.",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        },
+	{
+          "character": "Protagonist (big)",
+          "dialogue": "Still not a team.",
+          "voiceline": "assets/voicelines/conversation_02/big_01.wav"
+        }
+      ]
+    }
+  ]
+}
