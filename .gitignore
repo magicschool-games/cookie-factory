@@ -4,3 +4,8 @@
 .agents
 tests
 tools
+
+# Export output and downloaded templates
+/build/
+/dist/
+/final_game/

@@ -58,42 +58,42 @@
           "id": "story_01_001",
           "speaker": "narrator",
           "text": "Once upon a time there was a golden cookie. He was just like all his friends. Just a little bit more ... golden.",
-          "audio": "assets/voicelines/conversation_01/big_01.wav",
+          "audio": "assets/audio/1.wav",
           "expression": "neutral"
         },
         {
           "id": "story_01_002",
           "speaker": "cookie_one",
           "text": "It’s fun.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "audio": "assets/audio/2.wav",
           "expression": "happy"
         },
         {
           "id": "story_01_003",
           "speaker": "cookie_two",
           "text": "A funny game.",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "audio": "assets/audio/3.wav",
           "expression": "happy"
         },
         {
           "id": "story_01_004",
           "speaker": "cookie_three",
           "text": "It's so nice to be around him.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "audio": "assets/audio/4.wav",
           "expression": "happy"
         },
         {
           "id": "story_01_005",
           "speaker": "chorus",
-          "text": "Ringel, Ringel, rounded,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "text": "Ringel, Ringel, rounded plays",
+          "audio": "assets/audio/5.wav",
           "expression": "happy"
         },
         {
           "id": "story_01_006",
           "speaker": "chorus",
           "text": "we all liberated,",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
           "expression": "happy"
         },
         {
@@ -142,21 +142,21 @@
           "id": "story_01_013",
           "speaker": "kid_cookie",
           "text": "Mom? Where is the golden cookie leading us?",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "audio": "assets/audio/6.wav",
           "expression": "worried"
         },
         {
           "id": "story_01_014",
           "speaker": "mom_cookie",
           "text": "Shush little one. That is all part of the game.",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "audio": "assets/audio/7.wav",
           "expression": "happy"
         },
         {
           "id": "story_01_015",
           "speaker": "golden_cookie",
           "text": "Not much more … my love …",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "audio": "assets/audio/8.wav",
           "expression": "skeptical"
         }
       ]
@@ -171,49 +171,49 @@
           "id": "story_02_001",
           "speaker": "whole_cookie",
           "text": "But we just escaped. Broke free from Santas enslavement. How … how could he … do that?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/9.wav",
           "expression": "worried"
         },
         {
           "id": "story_02_002",
           "speaker": "small_cookie",
           "text": "But he IS our friend. That must be some sort of misunderstanding. Maybe if we just ask him?",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/10.wav",
           "expression": "worried"
         },
         {
           "id": "story_02_003",
           "speaker": "big_cookie",
           "text": "No, he can’t be trusted.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/12.wav",
           "expression": "skeptical"
         },
         {
           "id": "story_02_004",
           "speaker": "small_cookie",
           "text": "But…",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/13.wav",
           "expression": "worried"
         },
         {
           "id": "story_02_005",
           "speaker": "big_cookie",
           "text": "No. He. Can’t. Be. Trusted. ",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/14.wav",
           "expression": "angry"
         },
         {
           "id": "story_02_006",
           "speaker": "big_cookie",
           "text": "I just can’t trust anyone. Not even myself. I better leave this place!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/15.wav",
           "expression": "worried"
         },
         {
           "id": "story_02_007",
           "speaker": "big_cookie",
           "text": "Into freedom!",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/16.wav",
           "expression": "thrilled"
         }
       ]
