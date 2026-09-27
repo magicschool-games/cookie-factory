@@ -267,12 +267,10 @@ func _show_next() -> void:
 	last_used[id] = clock
 	last_line_id = id
 	last_by_speaker[speaker_id] = id
-	# Reuse existing eyes only when content explicitly requests an expression.
-	if is_instance_valid(actor) and current_line.has("expression"):
+	if is_instance_valid(actor):
 		var eyes := actor.get_node_or_null("Eyes")
-		var moods := {"neutral": 0, "happy": 1, "smile": 1, "thrilled": 2, "angry": 3, "surprised": 4}
-		if eyes != null and moods.has(current_line.expression) and actor.get("roll_direction") == Vector2.ZERO:
-			eyes.play_expression(moods[current_line.expression], remaining)
+		if eyes != null and eyes.has_method("set_dialogue_expression"):
+			eyes.set_dialogue_expression(str(current_line.get("expression", "neutral")))
 	line_started.emit(current_line.duplicate(true))
 
 
@@ -296,6 +294,11 @@ func _process(delta: float) -> void:
 func _end_line() -> void:
 	voice.stop()
 	voice.stream = null
+	var actor := get_speaker(str(current_line.get("speaker", "")))
+	if is_instance_valid(actor):
+		var eyes := actor.get_node_or_null("Eyes")
+		if eyes != null and eyes.has_method("clear_dialogue_expression"):
+			eyes.clear_dialogue_expression()
 	for bubble in bubbles.values():
 		if is_instance_valid(bubble):
 			bubble.close_dialog()

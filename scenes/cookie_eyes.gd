@@ -2,7 +2,12 @@ extends Node2D
 
 const SLIDE_DURATION := 0.6
 const EYE_COLOR := Color("321407")
-enum Mood { NEUTRAL, HAPPY, THRILLED, ANGRY, SURPRISED, BLINK }
+enum Mood { NEUTRAL, HAPPY, THRILLED, ANGRY, SURPRISED, BLINK, WORRIED, SKEPTICAL }
+const DIALOGUE_MOODS := {
+	"neutral": Mood.NEUTRAL, "happy": Mood.HAPPY, "smile": Mood.HAPPY,
+	"thrilled": Mood.THRILLED, "angry": Mood.ANGRY, "surprised": Mood.SURPRISED,
+	"worried": Mood.WORRIED, "skeptical": Mood.SKEPTICAL,
+}
 const PATTERNS := {
 	Mood.NEUTRAL: ["00000", "01110", "01110", "01110", "01110", "01110", "00000"],
 	Mood.HAPPY: ["00000", "00000", "01110", "11011", "10001", "00000", "00000"],
@@ -10,6 +15,8 @@ const PATTERNS := {
 	Mood.ANGRY: ["11000", "01100", "00110", "00000", "01110", "01110", "01110"],
 	Mood.SURPRISED: ["01110", "11011", "10001", "10001", "10001", "11011", "01110"],
 	Mood.BLINK: ["00000", "00000", "00000", "11111", "00000", "00000", "00000"],
+	Mood.WORRIED: ["00011", "00110", "00000", "01110", "01110", "01110", "00000"],
+	Mood.SKEPTICAL: ["00000", "11111", "00000", "01110", "01110", "00000", "00000"],
 }
 
 var cookie
@@ -25,6 +32,7 @@ var expression_elapsed := 0.0
 var expression_remaining := 0.0
 var blink_remaining := 3.2
 var launched_flip := false
+var dialogue_mood := -1
 
 
 func _ready() -> void:
@@ -72,6 +80,20 @@ func play_expression(value: Mood, duration: float = 0.0) -> void:
 	queue_redraw()
 
 
+func set_dialogue_expression(mood_name: String) -> void:
+	dialogue_mood = DIALOGUE_MOODS.get(mood_name, Mood.NEUTRAL)
+	_advance_expression(0.0)
+	queue_redraw()
+
+
+func clear_dialogue_expression() -> void:
+	if dialogue_mood < 0:
+		return
+	dialogue_mood = -1
+	play_expression(Mood.NEUTRAL)
+	_advance_expression(0.0)
+
+
 func _advance_expression(delta: float) -> void:
 	expression_elapsed += delta
 	var held_expression := -1
@@ -85,6 +107,12 @@ func _advance_expression(delta: float) -> void:
 		if expression != held_expression:
 			play_expression(held_expression, 0.5)
 		expression_remaining = 0.8
+		return
+	if dialogue_mood >= 0:
+		# Preserve ordinary flip/slide eyes, then resume the speaking mood.
+		var wanted: int = Mood.NEUTRAL if cookie.roll_direction != Vector2.ZERO or sliding else dialogue_mood
+		if expression != wanted:
+			play_expression(wanted)
 		return
 	if expression_remaining > 0.0:
 		expression_remaining = maxf(0.0, expression_remaining - delta)
@@ -133,7 +161,7 @@ func _draw() -> void:
 		var origin := (center - Vector2(2.5, 3.5) * pixel_size).round()
 		for y in range(pattern.size()):
 			for x in range(5):
-				var column := 4 - x if expression == Mood.ANGRY and side > 0 else x
+				var column := 4 - x if expression in [Mood.ANGRY, Mood.WORRIED] and side > 0 else x
 				if pattern[y][column] == "1":
 					var color := EYE_COLOR
 					if expression == Mood.THRILLED and x == 2 and y == 3:

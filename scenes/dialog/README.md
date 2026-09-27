@@ -37,7 +37,7 @@ The `[bubble]` section controls text timing: 1.5 base seconds plus 0.055 seconds
 
 The story cast includes speakers without scene actors. They use the same bubble scene as a top-centred narration panel rather than being assigned to either playable cookie. Bubbles show speech without speaker-name headings; speaker IDs remain available in dialogue signals. Registering one of those speakers later automatically anchors its lines to that actor.
 
-Optional `expression` fields reuse existing eyes (`neutral`, `happy`/`smile`, `thrilled`, `angry`, `surprised`) only while the actor is stationary. Current content does not force new expressions during ordinary movement.
+Each supplied line now has an `expression`: `neutral`, `happy`/`smile`, `thrilled`, `angry`, `surprised`, `worried`, or `skeptical`. Edit this field to tune the delivery. The speaker holds that mood until its line ends, including longer voice playback. Normal flips and eye slides temporarily use neutral movement eyes, then resume the speech mood. Catapult happiness and struggle animations retain priority. Ending, skipping, or interrupting a line clears its mood; replies affect only the new speaker.
 
 Signals: `dialogue_started(id)`, `line_started(line)`, `line_finished(line)`, and `dialogue_finished(id, interrupted)`.
 

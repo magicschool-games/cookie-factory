@@ -58,91 +58,106 @@
           "id": "story_01_001",
           "speaker": "narrator",
           "text": "Once upon a time there was a golden cookie. He was just like all his friends. Just a little bit more ... golden.",
-          "audio": "assets/voicelines/conversation_01/big_01.wav"
+          "audio": "assets/voicelines/conversation_01/big_01.wav",
+          "expression": "neutral"
         },
         {
           "id": "story_01_002",
           "speaker": "cookie_one",
           "text": "It’s fun.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_003",
           "speaker": "cookie_two",
           "text": "A funny game.",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_004",
           "speaker": "cookie_three",
           "text": "It's so nice to be around him.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_005",
           "speaker": "chorus",
           "text": "Ringel, Ringel, rounded,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_006",
           "speaker": "chorus",
           "text": "we all liberated,",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_007",
           "speaker": "chorus",
           "text": "dancing ‘round the golden one,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "thrilled"
         },
         {
           "id": "story_01_008",
           "speaker": "chorus",
           "text": "Everybody shoo, shoo, shoo.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "thrilled"
         },
         {
           "id": "story_01_009",
           "speaker": "chorus",
           "text": "Ringel, Ringel, Roses,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_010",
           "speaker": "chorus",
           "text": "yellow lil’ apricots,",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_011",
           "speaker": "chorus",
           "text": "Violet blue, forget-me-not,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_012",
           "speaker": "chorus",
           "text": "cookies lov’s him lot, lot, lot. ",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_013",
           "speaker": "kid_cookie",
           "text": "Mom? Where is the golden cookie leading us?",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "worried"
         },
         {
           "id": "story_01_014",
           "speaker": "mom_cookie",
           "text": "Shush little one. That is all part of the game.",
-          "audio": "assets/voicelines/conversation_01/big_02.wav"
+          "audio": "assets/voicelines/conversation_01/big_02.wav",
+          "expression": "happy"
         },
         {
           "id": "story_01_015",
           "speaker": "golden_cookie",
           "text": "Not much more … my love …",
-          "audio": "assets/voicelines/conversation_01/small_01.wav"
+          "audio": "assets/voicelines/conversation_01/small_01.wav",
+          "expression": "skeptical"
         }
       ]
     },
@@ -156,43 +171,50 @@
           "id": "story_02_001",
           "speaker": "whole_cookie",
           "text": "But we just escaped. Broke free from Santas enslavement. How … how could he … do that?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav"
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "expression": "worried"
         },
         {
           "id": "story_02_002",
           "speaker": "small_cookie",
           "text": "But he IS our friend. That must be some sort of misunderstanding. Maybe if we just ask him?",
-          "audio": "assets/voicelines/conversation_02/small_01.wav"
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "expression": "worried"
         },
         {
           "id": "story_02_003",
           "speaker": "big_cookie",
           "text": "No, he can’t be trusted.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav"
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "expression": "skeptical"
         },
         {
           "id": "story_02_004",
           "speaker": "small_cookie",
           "text": "But…",
-          "audio": "assets/voicelines/conversation_02/small_01.wav"
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "expression": "worried"
         },
         {
           "id": "story_02_005",
           "speaker": "big_cookie",
           "text": "No. He. Can’t. Be. Trusted. ",
-          "audio": "assets/voicelines/conversation_02/big_02.wav"
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "expression": "angry"
         },
         {
           "id": "story_02_006",
           "speaker": "big_cookie",
           "text": "I just can’t trust anyone. Not even myself. I better leave this place!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav"
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "expression": "worried"
         },
         {
           "id": "story_02_007",
           "speaker": "big_cookie",
           "text": "Into freedom!",
-          "audio": "assets/voicelines/conversation_02/big_02.wav"
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "expression": "thrilled"
         }
       ]
     }
@@ -218,7 +240,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "happy"
         },
         {
           "id": "small_002",
@@ -230,7 +253,8 @@
             "near_other_cookie"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "happy"
         },
         {
           "id": "small_003",
@@ -245,7 +269,8 @@
           "reply_candidates": [
             "big_002",
             "big_017"
-          ]
+          ],
+          "expression": "worried"
         },
         {
           "id": "small_004",
@@ -257,7 +282,8 @@
             "conversation_reply"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "surprised"
         },
         {
           "id": "small_005",
@@ -269,7 +295,8 @@
             "near_other_cookie"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "thrilled"
         },
         {
           "id": "small_006",
@@ -281,7 +308,8 @@
             "conversation_reply"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "worried"
         },
         {
           "id": "small_007",
@@ -296,7 +324,8 @@
           "reply_candidates": [
             "big_009",
             "big_010"
-          ]
+          ],
+          "expression": "angry"
         },
         {
           "id": "small_008",
@@ -307,7 +336,8 @@
             "idle"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "neutral"
         },
         {
           "id": "small_009",
@@ -319,7 +349,8 @@
             "after_minor_failure"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "happy"
         },
         {
           "id": "small_010",
@@ -332,7 +363,8 @@
             "after_minor_failure"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "happy"
         },
         {
           "id": "small_011",
@@ -347,7 +379,8 @@
           "reply_candidates": [
             "big_012",
             "big_016"
-          ]
+          ],
+          "expression": "happy"
         },
         {
           "id": "small_012",
@@ -361,7 +394,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "big_013"
-          ]
+          ],
+          "expression": "surprised"
         },
         {
           "id": "small_013",
@@ -375,7 +409,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "big_015"
-          ]
+          ],
+          "expression": "worried"
         },
         {
           "id": "small_014",
@@ -389,7 +424,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "big_017"
-          ]
+          ],
+          "expression": "happy"
         },
         {
           "id": "small_015",
@@ -403,7 +439,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "big_014"
-          ]
+          ],
+          "expression": "worried"
         }
       ],
       "big_cookie": [
@@ -417,7 +454,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "skeptical"
         },
         {
           "id": "big_002",
@@ -431,7 +469,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_003"
-          ]
+          ],
+          "expression": "skeptical"
         },
         {
           "id": "big_003",
@@ -443,7 +482,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "skeptical"
         },
         {
           "id": "big_004",
@@ -455,7 +495,8 @@
             "conversation_reply"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "neutral"
         },
         {
           "id": "big_005",
@@ -467,7 +508,8 @@
             "conversation_reply"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "worried"
         },
         {
           "id": "big_006",
@@ -479,7 +521,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "thrilled"
         },
         {
           "id": "big_007",
@@ -491,7 +534,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "angry"
         },
         {
           "id": "big_008",
@@ -503,7 +547,8 @@
             "story_memory"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "thrilled"
         },
         {
           "id": "big_009",
@@ -517,7 +562,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_007"
-          ]
+          ],
+          "expression": "angry"
         },
         {
           "id": "big_010",
@@ -531,7 +577,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_007"
-          ]
+          ],
+          "expression": "angry"
         },
         {
           "id": "big_011",
@@ -543,7 +590,8 @@
             "near_hazard"
           ],
           "weight": 1.0,
-          "reply_candidates": []
+          "reply_candidates": [],
+          "expression": "worried"
         },
         {
           "id": "big_012",
@@ -557,7 +605,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_011"
-          ]
+          ],
+          "expression": "skeptical"
         },
         {
           "id": "big_013",
@@ -571,7 +620,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_012"
-          ]
+          ],
+          "expression": "surprised"
         },
         {
           "id": "big_014",
@@ -585,7 +635,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_015"
-          ]
+          ],
+          "expression": "worried"
         },
         {
           "id": "big_015",
@@ -599,7 +650,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_013"
-          ]
+          ],
+          "expression": "happy"
         },
         {
           "id": "big_016",
@@ -613,7 +665,8 @@
           "weight": 1.0,
           "reply_candidates": [
             "small_011"
-          ]
+          ],
+          "expression": "happy"
         },
         {
           "id": "big_017",
@@ -628,7 +681,8 @@
           "reply_candidates": [
             "small_003",
             "small_014"
-          ]
+          ],
+          "expression": "skeptical"
         }
       ]
     },
