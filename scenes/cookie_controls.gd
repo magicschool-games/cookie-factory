@@ -43,6 +43,11 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(_fit_cameras_to_level)
 	_fit_cameras_to_level()
 	select_cookie(0)
+	var dialogue_context := preload("res://scenes/dialog/dialogue_context.gd").new()
+	dialogue_context.name = "DialogueContext"
+	dialogue_context.small = cookies[1]
+	dialogue_context.big = cookies[0]
+	add_child(dialogue_context)
 	set_physics_process(not next_scene.is_empty() or not previous_scene.is_empty())
 
 

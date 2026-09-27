@@ -1,45 +1,65 @@
 [gd_scene format=3 uid="uid://dmwl06a4erift"]
 
-[ext_resource type="Script" uid="uid://blmyp7klfshoo" path="res://scenes/dialog/dialog_bubble.gd" id="1_8jp1d"]
-[ext_resource type="Theme" uid="uid://boroh73kjkh88" path="res://theme/cookie_theme.tres" id="1_s2350"]
+[ext_resource type="Script" path="res://scenes/dialog/dialog_bubble.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/Speechbubble Pack/Blank bubble.png" id="2_bubble"]
 
-[node name="DialogBubble" type="Node2D" unique_id=1102743346 node_paths=PackedStringArray("dialog_container", "message_label")]
-script = ExtResource("1_8jp1d")
+[sub_resource type="StyleBoxTexture" id="Style_bubble"]
+texture = ExtResource("2_bubble")
+region_rect = Rect2(0, 0, 54, 36)
+texture_margin_left = 20.0
+texture_margin_top = 16.0
+texture_margin_right = 20.0
+texture_margin_bottom = 16.0
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+
+[sub_resource type="AtlasTexture" id="Tail_texture"]
+atlas = ExtResource("2_bubble")
+region = Rect2(27, 35, 17, 13)
+
+[node name="DialogBubble" type="Node2D" node_paths=PackedStringArray("dialog_container", "message_label")]
+script = ExtResource("1_script")
 dialog_container = NodePath("DialogContainer")
-message_label = NodePath("DialogContainer/MarginContainer/Label")
+message_label = NodePath("DialogContainer/MarginContainer/Lines/Label")
 
-[node name="DialogContainer" type="PanelContainer" parent="." unique_id=1786742018]
-offset_right = 517.0
-offset_bottom = 44.0
-theme = ExtResource("1_s2350")
+[node name="DialogContainer" type="Panel" parent="."]
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_bubble")
 
-[node name="MarginContainer" type="MarginContainer" parent="DialogContainer" unique_id=1301258428]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 4
+[node name="TailAnchor" type="Node2D" parent="DialogContainer"]
 
-[node name="Label" type="Label" parent="DialogContainer/MarginContainer" unique_id=1913874998]
-layout_mode = 2
-text = "Lorem ipsum dolor sit amed et consecuteur"
+[node name="Tail" type="TextureRect" parent="DialogContainer/TailAnchor"]
+layout_mode = 0
+mouse_filter = 2
+texture = SubResource("Tail_texture")
+expand_mode = 1
+stretch_mode = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+offset_right = 17.0
+offset_bottom = 13.0
 
-[node name="ThinkingBubbles" type="Control" parent="." unique_id=41861182]
+[node name="MarginContainer" type="Control" parent="DialogContainer"]
+layout_mode = 0
+mouse_filter = 2
+
+[node name="Lines" type="Control" parent="DialogContainer/MarginContainer"]
+layout_mode = 0
+mouse_filter = 2
+theme_override_constants/separation = 6
+
+[node name="Label" type="Label" parent="DialogContainer/MarginContainer/Lines"]
+layout_mode = 0
+theme_override_colors/font_color = Color(0.17, 0.12, 0.1, 1)
+theme_override_font_sizes/font_size = 14
+text = "Friendship is magic."
+autowrap_mode = 3
+
+[node name="Skip" type="Label" parent="DialogContainer/MarginContainer/Lines"]
 visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("1_s2350")
-
-[node name="ThinkingBubble2" type="PanelContainer" parent="ThinkingBubbles" unique_id=2063875907]
-custom_maximum_size = Vector2(48, 48)
-layout_mode = 1
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="ThinkingBubble1" type="PanelContainer" parent="ThinkingBubbles" unique_id=1047428425]
-custom_maximum_size = Vector2(24, 24)
-layout_mode = 1
-offset_right = 24.0
-offset_bottom = 24.0
+layout_mode = 0
+theme_override_colors/font_color = Color(0.37, 0.25, 0.19, 1)
+theme_override_font_sizes/font_size = 9
+text = "Space: next · Enter: skip"

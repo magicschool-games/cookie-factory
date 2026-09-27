@@ -1,0 +1,709 @@
+{
+  "schema_version": "2.0",
+  "characters": {
+    "narrator": {
+      "display_name": "Narrator"
+    },
+    "cookie_one": {
+      "display_name": "One Cookie"
+    },
+    "cookie_two": {
+      "display_name": "Second Cookie"
+    },
+    "cookie_three": {
+      "display_name": "Third Cookie"
+    },
+    "chorus": {
+      "display_name": "Song / Chorus"
+    },
+    "kid_cookie": {
+      "display_name": "Kid Cookie"
+    },
+    "mom_cookie": {
+      "display_name": "Mom Cookie"
+    },
+    "golden_cookie": {
+      "display_name": "Golden Cookie"
+    },
+    "whole_cookie": {
+      "display_name": "Whole Cookie"
+    },
+    "small_cookie": {
+      "display_name": "Small Cookie",
+      "role": "playable_protagonist",
+      "personality_tags": [
+        "trusting",
+        "hopeful",
+        "cooperative"
+      ]
+    },
+    "big_cookie": {
+      "display_name": "Big Cookie",
+      "role": "playable_protagonist",
+      "personality_tags": [
+        "distrustful",
+        "assertive",
+        "independent"
+      ]
+    }
+  },
+  "story_dialogue": {
+    "conversation_01": {
+      "kind": "story_sequence",
+      "playback": "sequential",
+      "trigger_event": null,
+      "skippable": true,
+      "lines": [
+        {
+          "id": "story_01_001",
+          "speaker": "narrator",
+          "text": "Once upon a time there was a golden cookie. He was just like all his friends. Just a little bit more ... golden.",
+          "audio": "assets/voicelines/conversation_01/big_01.wav"
+        },
+        {
+          "id": "story_01_002",
+          "speaker": "cookie_one",
+          "text": "It’s fun.",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_003",
+          "speaker": "cookie_two",
+          "text": "A funny game.",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_004",
+          "speaker": "cookie_three",
+          "text": "It's so nice to be around him.",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_005",
+          "speaker": "chorus",
+          "text": "Ringel, Ringel, rounded,",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_006",
+          "speaker": "chorus",
+          "text": "we all liberated,",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_007",
+          "speaker": "chorus",
+          "text": "dancing ‘round the golden one,",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_008",
+          "speaker": "chorus",
+          "text": "Everybody shoo, shoo, shoo.",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_009",
+          "speaker": "chorus",
+          "text": "Ringel, Ringel, Roses,",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_010",
+          "speaker": "chorus",
+          "text": "yellow lil’ apricots,",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_011",
+          "speaker": "chorus",
+          "text": "Violet blue, forget-me-not,",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_012",
+          "speaker": "chorus",
+          "text": "cookies lov’s him lot, lot, lot. ",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_013",
+          "speaker": "kid_cookie",
+          "text": "Mom? Where is the golden cookie leading us?",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        },
+        {
+          "id": "story_01_014",
+          "speaker": "mom_cookie",
+          "text": "Shush little one. That is all part of the game.",
+          "audio": "assets/voicelines/conversation_01/big_02.wav"
+        },
+        {
+          "id": "story_01_015",
+          "speaker": "golden_cookie",
+          "text": "Not much more … my love …",
+          "audio": "assets/voicelines/conversation_01/small_01.wav"
+        }
+      ]
+    },
+    "conversation_02": {
+      "kind": "story_sequence",
+      "playback": "sequential",
+      "trigger_event": null,
+      "skippable": true,
+      "lines": [
+        {
+          "id": "story_02_001",
+          "speaker": "whole_cookie",
+          "text": "But we just escaped. Broke free from Santas enslavement. How … how could he … do that?",
+          "audio": "assets/voicelines/conversation_02/big_01.wav"
+        },
+        {
+          "id": "story_02_002",
+          "speaker": "small_cookie",
+          "text": "But he IS our friend. That must be some sort of misunderstanding. Maybe if we just ask him?",
+          "audio": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "id": "story_02_003",
+          "speaker": "big_cookie",
+          "text": "No, he can’t be trusted.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "id": "story_02_004",
+          "speaker": "small_cookie",
+          "text": "But…",
+          "audio": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "id": "story_02_005",
+          "speaker": "big_cookie",
+          "text": "No. He. Can’t. Be. Trusted. ",
+          "audio": "assets/voicelines/conversation_02/big_02.wav"
+        },
+        {
+          "id": "story_02_006",
+          "speaker": "big_cookie",
+          "text": "I just can’t trust anyone. Not even myself. I better leave this place!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav"
+        },
+        {
+          "id": "story_02_007",
+          "speaker": "big_cookie",
+          "text": "Into freedom!",
+          "audio": "assets/voicelines/conversation_02/big_02.wav"
+        }
+      ]
+    }
+  },
+  "random_dialogue": {
+    "config": {
+      "selection_mode": "weighted_random",
+      "global_cooldown_seconds": 8.0,
+      "same_line_cooldown_seconds": 45.0,
+      "prevent_immediate_repeat": true,
+      "reply_chance": 0.35,
+      "notes": "contexts/categories/reply_candidates are suggested integration metadata and can be tuned in Godot."
+    },
+    "pools": {
+      "small_cookie": [
+        {
+          "id": "small_001",
+          "text": "Golden. Golden. Happy one.",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "golden_cookie_memory",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_002",
+          "text": "Friendship is magic.",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "friendship",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_003",
+          "text": "But we are friends, right?",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "trust",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_002",
+            "big_017"
+          ]
+        },
+        {
+          "id": "small_004",
+          "text": "What about: Yes?",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "generic_response",
+          "contexts": [
+            "idle",
+            "conversation_reply"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_005",
+          "text": "Oh my … FRIEND!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "friendship_reaction",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_006",
+          "text": "But, but …",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "hesitation",
+          "contexts": [
+            "idle",
+            "conversation_reply"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_007",
+          "text": "How could you do that to me?!",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "betrayal",
+          "contexts": [
+            "failed_cooperation",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_009",
+            "big_010"
+          ]
+        },
+        {
+          "id": "small_008",
+          "text": "What else?",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "generic",
+          "contexts": [
+            "idle"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_009",
+          "text": "Everything is fine.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "reassurance",
+          "contexts": [
+            "idle",
+            "after_minor_failure"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_010",
+          "text": "Lovely. Just lovely.",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "positive_or_sarcastic",
+          "contexts": [
+            "idle",
+            "after_success",
+            "after_minor_failure"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "small_011",
+          "text": "Size doesn’t matter.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "size_banter",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_012",
+            "big_016"
+          ]
+        },
+        {
+          "id": "small_012",
+          "text": "How comes you a rectangle?",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "shape_banter",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_013"
+          ]
+        },
+        {
+          "id": "small_013",
+          "text": "Help me big one!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "request_help",
+          "contexts": [
+            "needs_big_cookie",
+            "blocked_by_obstacle"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_015"
+          ]
+        },
+        {
+          "id": "small_014",
+          "text": "Let’s do it together.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "teamwork",
+          "contexts": [
+            "cooperation_opportunity",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_017"
+          ]
+        },
+        {
+          "id": "small_015",
+          "text": "Don’t leave me behind!",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "separation",
+          "contexts": [
+            "distance_large",
+            "other_cookie_moving_away"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "big_014"
+          ]
+        }
+      ],
+      "big_cookie": [
+        {
+          "id": "big_001",
+          "text": "How could I trust him?",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "trust",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_002",
+          "text": "Why should I trust you?",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "trust",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_003"
+          ]
+        },
+        {
+          "id": "big_003",
+          "text": "He isn’t suited to be our leader.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "leadership",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_004",
+          "text": "Just because.",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "generic_response",
+          "contexts": [
+            "idle",
+            "conversation_reply"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_005",
+          "text": "But what, if … ?",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "hesitation",
+          "contexts": [
+            "idle",
+            "conversation_reply"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_006",
+          "text": "Make Cookies great again!",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "ambition",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_007",
+          "text": "Forget HIM! Follow ME!",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "leadership_rivalry",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_008",
+          "text": "I will become golden!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "ambition",
+          "contexts": [
+            "idle",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_009",
+          "text": "BETRAYAL!",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "betrayal",
+          "contexts": [
+            "failed_cooperation",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_007"
+          ]
+        },
+        {
+          "id": "big_010",
+          "text": "LYER!",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "accusation",
+          "contexts": [
+            "failed_cooperation",
+            "story_memory"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_007"
+          ]
+        },
+        {
+          "id": "big_011",
+          "text": "Oh, no, No, NO!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "panic",
+          "contexts": [
+            "danger",
+            "near_hazard"
+          ],
+          "weight": 1.0,
+          "reply_candidates": []
+        },
+        {
+          "id": "big_012",
+          "text": "Stay quiet little crumbles while the big one talks.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "size_banter",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_011"
+          ]
+        },
+        {
+          "id": "big_013",
+          "text": "How come you are a square?",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "shape_banter",
+          "contexts": [
+            "idle",
+            "near_other_cookie"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_012"
+          ]
+        },
+        {
+          "id": "big_014",
+          "text": "Hey crumbles, at least come here!",
+          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "category": "separation",
+          "contexts": [
+            "distance_large",
+            "other_cookie_moving_away"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_015"
+          ]
+        },
+        {
+          "id": "big_015",
+          "text": "That’s what I call a job for a big cookie.",
+          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "category": "big_cookie_action",
+          "contexts": [
+            "needs_big_cookie",
+            "after_big_cookie_success"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_013"
+          ]
+        },
+        {
+          "id": "big_016",
+          "text": "At least I can pull my own weight.",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "self_reliance",
+          "contexts": [
+            "idle",
+            "after_big_cookie_success"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_011"
+          ]
+        },
+        {
+          "id": "big_017",
+          "text": "Still not a team.",
+          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "category": "teamwork_distrust",
+          "contexts": [
+            "cooperation_opportunity",
+            "after_cooperation"
+          ],
+          "weight": 1.0,
+          "reply_candidates": [
+            "small_003",
+            "small_014"
+          ]
+        }
+      ]
+    },
+    "exchanges": [
+      {
+        "id": "exchange_are_we_friends",
+        "contexts": [
+          "idle",
+          "near_other_cookie"
+        ],
+        "weight": 1.0,
+        "sequence": [
+          "small_003",
+          "big_002"
+        ]
+      },
+      {
+        "id": "exchange_shape_banter",
+        "contexts": [
+          "idle",
+          "near_other_cookie"
+        ],
+        "weight": 1.0,
+        "sequence": [
+          "small_012",
+          "big_013"
+        ]
+      },
+      {
+        "id": "exchange_need_big_cookie",
+        "contexts": [
+          "needs_big_cookie",
+          "blocked_by_obstacle"
+        ],
+        "weight": 1.0,
+        "sequence": [
+          "small_013",
+          "big_015"
+        ]
+      },
+      {
+        "id": "exchange_teamwork",
+        "contexts": [
+          "cooperation_opportunity"
+        ],
+        "weight": 1.0,
+        "sequence": [
+          "small_014",
+          "big_017"
+        ]
+      },
+      {
+        "id": "exchange_dont_leave",
+        "contexts": [
+          "distance_large",
+          "other_cookie_moving_away"
+        ],
+        "weight": 1.0,
+        "sequence": [
+          "small_015",
+          "big_014"
+        ]
+      },
+      {
+        "id": "exchange_betrayal",
+        "contexts": [
+          "failed_cooperation",
+          "story_memory"
+        ],
+        "weight": 0.7,
+        "sequence": [
+          "small_007",
+          "big_009"
+        ]
+      }
+    ]
+  }
+}
