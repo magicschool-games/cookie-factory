@@ -122,15 +122,15 @@ func say(line_id: String) -> void:
 		push_warning("Intro line unavailable: " + line_id)
 		waiting_line = ""
 		_resume_animation.call_deferred()
+	elif line_id == "story_02_007" and escape_sequence != null:
+		# Start the escape with the voice, not after dialogue playback ends.
+		escape_sequence.play()
 
 
 func _on_dialogue_finished(id: String, _interrupted: bool) -> void:
 	if finishing or id != waiting_line:
 		return
 	waiting_line = ""
-	if id == "story_02_007" and escape_sequence != null and not escape_sequence.complete:
-		escape_sequence.play.call_deferred()
-		return
 	# Resume only after the dialogue manager has completed its state cleanup.
 	_resume_animation.call_deferred()
 

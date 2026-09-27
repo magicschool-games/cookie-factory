@@ -13,6 +13,8 @@ const OBSTACLE_HOP = preload("res://scenes/obstacle_hop.gd")
 @export var is_controlled := false
 @export var separate_eyes := false
 @export var can_hop_obstacles := false
+@export_range(-40.0, 0.0) var flip_volume_db := -21.0
+var flip_audio: AudioStreamPlayer
 var hop_bodies: Array[RID] = []
 var support_bodies: Array[RID] = []
 var bridge_cookie: CharacterBody2D
@@ -44,11 +46,17 @@ var struggle_direction := Vector2.ZERO
 const STRUGGLE_DURATION := 0.3
 var active_launch_target: CharacterBody2D
 var launch_input_consumed := false
+var blocked_input_direction := Vector2.ZERO
 @onready var resting_scale: Vector2 = $Sprite2D.scale
 @onready var sprite: Sprite2D = $Sprite2D
 
 
 func _ready() -> void:
+	flip_audio = AudioStreamPlayer.new()
+	flip_audio.name = "FlipSound"
+	flip_audio.stream = load("res://assets/audio/sfx/butterkek_flip.wav")
+	add_child(flip_audio)
+	jump_started.connect(_play_flip_sound)
 	# Ignore transparent margins and account for either sprite orientation.
 	var visible_rect := sprite.texture.get_image().get_used_rect()
 	var visible_size := Vector2(visible_rect.size) * resting_scale
@@ -76,6 +84,12 @@ func _ready() -> void:
 		add_child(eyes)
 		jump_started.connect(eyes.begin_flip)
 		landed.connect(eyes.settle)
+
+
+func _play_flip_sound() -> void:
+	flip_audio.volume_db = flip_volume_db
+	flip_audio.pitch_scale = (0.88 if footprint.x > GRID_SIZE + 1 else 1.12) * randf_range(0.97, 1.03)
+	flip_audio.play()
 
 
 func grid_position(value: Vector2) -> Vector2:
@@ -134,6 +148,9 @@ func _physics_process(delta: float) -> void:
 	if not is_controlled:
 		input_dir = Vector2.ZERO
 	input_dir = _cardinal_direction(input_dir)
+	# Retry a blocked flip only after releasing or changing direction.
+	if input_dir != blocked_input_direction:
+		blocked_input_direction = Vector2.ZERO
 
 	# A throw consumes the current movement press. Holding it must not make
 	# the launcher walk after the passenger lands.
@@ -148,7 +165,7 @@ func _physics_process(delta: float) -> void:
 		return
 
 	if roll_direction == Vector2.ZERO:
-		if input_dir == Vector2.ZERO:
+		if input_dir == Vector2.ZERO or input_dir == blocked_input_direction:
 			velocity = Vector2.ZERO
 			return
 		if movement_blocked_handler.is_valid() and movement_blocked_handler.call():
@@ -211,6 +228,8 @@ func _physics_process(delta: float) -> void:
 	# reached tile instead of leaving the cookie between tiles at the wall.
 	if roll_travel >= roll_distance - 0.001 or collision != null or forward_travel < 0.0001:
 		var completed_distance := roll_distance if roll_travel >= roll_distance - 0.001 else floorf((roll_travel + 0.001) / GRID_SIZE) * GRID_SIZE
+		if roll_travel < roll_distance - 0.001 and input_dir == roll_direction:
+			blocked_input_direction = input_dir
 		position = roll_start + roll_direction * completed_distance
 		roll_direction = Vector2.ZERO
 		is_launched = false

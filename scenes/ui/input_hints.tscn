@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://ndud51in5yh4"]
 
-[ext_resource type="Texture2D" uid="uid://drghq3gqv510c" path="res://theme/input/keyboard_arrows.png" id="1_gcy0x"]
+[ext_resource type="Texture2D" path="res://theme/input/keyboard_w.png" id="move_w"]
+[ext_resource type="Texture2D" path="res://theme/input/keyboard_a.png" id="move_a"]
+[ext_resource type="Texture2D" path="res://theme/input/keyboard_s.png" id="move_s"]
+[ext_resource type="Texture2D" path="res://theme/input/keyboard_d.png" id="move_d"]
 [ext_resource type="Script" uid="uid://cgb3j24uyqhh3" path="res://scenes/ui/input_hints.gd" id="1_ytjh7"]
 [ext_resource type="Texture2D" uid="uid://bj16ely7cjcpc" path="res://theme/input/keyboard_e.png" id="2_ldvnw"]
 [ext_resource type="Script" uid="uid://dwjroi20fla02" path="res://scenes/ui/toggle_texture.gd" id="3_fmcoa"]
@@ -41,9 +44,54 @@ layout_mode = 2
 [node name="MoveHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1616289592]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer" unique_id=1206957697]
+[node name="MovementKeys" type="Control" parent="MarginContainer/HBoxContainer/MoveHintContainer"]
+custom_minimum_size = Vector2(144, 128)
 layout_mode = 2
-texture = ExtResource("1_gcy0x")
+mouse_filter = 2
+
+[node name="KeyW" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer/MovementKeys"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 96.0
+offset_bottom = 64.0
+texture = ExtResource("move_w")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="KeyA" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer/MovementKeys"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 64.0
+offset_right = 48.0
+offset_bottom = 112.0
+texture = ExtResource("move_a")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="KeyS" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer/MovementKeys"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 112.0
+texture = ExtResource("move_s")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="KeyD" type="TextureRect" parent="MarginContainer/HBoxContainer/MoveHintContainer/MovementKeys"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 144.0
+offset_bottom = 112.0
+texture = ExtResource("move_d")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/MoveHintContainer" unique_id=1800529840]
 layout_mode = 2
@@ -65,7 +113,7 @@ disable_toggle = true
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/InteractHintContainer" unique_id=1911254998]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Switch controls"
+text = "Switch cookie"
 
 [node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1689139795]
 layout_mode = 2

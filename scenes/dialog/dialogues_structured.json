@@ -220,7 +220,7 @@
         {
           "id": "small_002",
           "text": "Friendship is magic.",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/1002.wav",
           "category": "friendship",
           "contexts": [
             "idle",
@@ -233,7 +233,7 @@
         {
           "id": "small_003",
           "text": "But we are friends, right?",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1003.wav",
           "category": "trust",
           "contexts": [
             "idle",
@@ -249,7 +249,7 @@
         {
           "id": "small_004",
           "text": "What about: Yes?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/1004.wav",
           "category": "generic_response",
           "contexts": [
             "idle",
@@ -262,7 +262,7 @@
         {
           "id": "small_005",
           "text": "Oh my … FRIEND!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/1005.wav",
           "category": "friendship_reaction",
           "contexts": [
             "idle",
@@ -275,7 +275,7 @@
         {
           "id": "small_006",
           "text": "But, but …",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1006.wav",
           "category": "hesitation",
           "contexts": [
             "idle",
@@ -288,7 +288,7 @@
         {
           "id": "small_007",
           "text": "How could you do that to me?!",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/1008.wav",
           "category": "betrayal",
           "contexts": [
             "failed_cooperation",
@@ -304,7 +304,7 @@
         {
           "id": "small_008",
           "text": "What else?",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/1009.wav",
           "category": "generic",
           "contexts": [
             "idle"
@@ -316,7 +316,7 @@
         {
           "id": "small_009",
           "text": "Everything is fine.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1010.wav",
           "category": "reassurance",
           "contexts": [
             "idle",
@@ -329,7 +329,7 @@
         {
           "id": "small_010",
           "text": "Lovely. Just lovely.",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/1011.wav",
           "category": "positive_or_sarcastic",
           "contexts": [
             "idle",
@@ -343,7 +343,7 @@
         {
           "id": "small_011",
           "text": "Size doesn’t matter.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1012.wav",
           "category": "size_banter",
           "contexts": [
             "idle",
@@ -359,7 +359,7 @@
         {
           "id": "small_012",
           "text": "How comes you a rectangle?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/1013.wav",
           "category": "shape_banter",
           "contexts": [
             "idle",
@@ -374,7 +374,7 @@
         {
           "id": "small_013",
           "text": "Help me big one!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/1014.wav",
           "category": "request_help",
           "contexts": [
             "needs_big_cookie",
@@ -389,7 +389,7 @@
         {
           "id": "small_014",
           "text": "Let’s do it together.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1015.wav",
           "category": "teamwork",
           "contexts": [
             "cooperation_opportunity",
@@ -404,7 +404,7 @@
         {
           "id": "small_015",
           "text": "Don’t leave me behind!",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/1016.wav",
           "category": "separation",
           "contexts": [
             "distance_large",
@@ -421,7 +421,7 @@
         {
           "id": "big_001",
           "text": "How could I trust him?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2001.wav",
           "category": "trust",
           "contexts": [
             "idle",
@@ -434,7 +434,7 @@
         {
           "id": "big_002",
           "text": "Why should I trust you?",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/2002.wav",
           "category": "trust",
           "contexts": [
             "idle",
@@ -449,7 +449,7 @@
         {
           "id": "big_003",
           "text": "He isn’t suited to be our leader.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/2003.wav",
           "category": "leadership",
           "contexts": [
             "idle",
@@ -462,7 +462,7 @@
         {
           "id": "big_004",
           "text": "Just because.",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2004.wav",
           "category": "generic_response",
           "contexts": [
             "idle",
@@ -475,7 +475,7 @@
         {
           "id": "big_005",
           "text": "But what, if … ?",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/2005.wav",
           "category": "hesitation",
           "contexts": [
             "idle",
@@ -488,7 +488,7 @@
         {
           "id": "big_006",
           "text": "Make Cookies great again!",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/2006.wav",
           "category": "ambition",
           "contexts": [
             "idle",
@@ -501,7 +501,7 @@
         {
           "id": "big_007",
           "text": "Forget HIM! Follow ME!",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2007.wav",
           "category": "leadership_rivalry",
           "contexts": [
             "idle",
@@ -514,7 +514,7 @@
         {
           "id": "big_008",
           "text": "I will become golden!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/2008.wav",
           "category": "ambition",
           "contexts": [
             "idle",
@@ -527,7 +527,7 @@
         {
           "id": "big_009",
           "text": "BETRAYAL!",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/2016.wav",
           "category": "betrayal",
           "contexts": [
             "failed_cooperation",
@@ -542,7 +542,7 @@
         {
           "id": "big_010",
           "text": "LYER!",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2017.wav",
           "category": "accusation",
           "contexts": [
             "failed_cooperation",
@@ -557,7 +557,7 @@
         {
           "id": "big_011",
           "text": "Oh, no, No, NO!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/2009.wav",
           "category": "panic",
           "contexts": [
             "danger",
@@ -570,7 +570,7 @@
         {
           "id": "big_012",
           "text": "Stay quiet little crumbles while the big one talks.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/2010.wav",
           "category": "size_banter",
           "contexts": [
             "idle",
@@ -585,7 +585,7 @@
         {
           "id": "big_013",
           "text": "How come you are a square?",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2011.wav",
           "category": "shape_banter",
           "contexts": [
             "idle",
@@ -600,7 +600,7 @@
         {
           "id": "big_014",
           "text": "Hey crumbles, at least come here!",
-          "audio": "assets/voicelines/conversation_02/small_01.wav",
+          "audio": "assets/audio/2012.wav",
           "category": "separation",
           "contexts": [
             "distance_large",
@@ -615,7 +615,7 @@
         {
           "id": "big_015",
           "text": "That’s what I call a job for a big cookie.",
-          "audio": "assets/voicelines/conversation_02/big_02.wav",
+          "audio": "assets/audio/2013.wav",
           "category": "big_cookie_action",
           "contexts": [
             "needs_big_cookie",
@@ -630,7 +630,7 @@
         {
           "id": "big_016",
           "text": "At least I can pull my own weight.",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2014.wav",
           "category": "self_reliance",
           "contexts": [
             "idle",
@@ -645,7 +645,7 @@
         {
           "id": "big_017",
           "text": "Still not a team.",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/2015.wav",
           "category": "teamwork_distrust",
           "contexts": [
             "cooperation_opportunity",

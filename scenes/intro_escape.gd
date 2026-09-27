@@ -9,6 +9,7 @@ var big: Node2D
 var small: Node2D
 var destination := Vector2.ZERO
 var tween: Tween
+var voice_fading := false
 
 
 func _ready() -> void:
@@ -58,6 +59,9 @@ func _jump_and_fall(actor: Node2D, target: Vector2) -> void:
 
 
 func _jump_pose(progress: float, actor: Node2D, start: Vector2, target: Vector2) -> void:
+	if actor == big and progress >= 0.5 and not voice_fading:
+		voice_fading = true
+		get_node("/root/DialogueManager").fade_line_voice("story_02_007", 2.2, -30.0)
 	actor.position = start.lerp(target, progress) + Vector2(0, -sin(progress * PI) * 80)
 
 

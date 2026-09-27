@@ -30,6 +30,7 @@ var remaining := 0.0
 var skippable := false
 var rng := RandomNumberGenerator.new()
 var voice: AudioStreamPlayer
+var voice_fade: Tween
 var story_sequence_owner: WeakRef
 var screen_bubble: DialogBubble
 var advance_hint: Label
@@ -162,7 +163,9 @@ func _can_start(value: int) -> bool:
 	if speakers.is_empty():
 		return false
 	if active:
-		return value > priority
+		# Let the whole conversation (including replies) finish. Movement or
+		# puzzle events must never replace a line that is already playing.
+		return false
 	return value == Priority.STORY or clock >= next_allowed
 
 
@@ -307,6 +310,7 @@ func _show_next() -> void:
 	var minimum := maxf(0.1, float(setting("bubble", "min_duration", 2.5)))
 	var maximum := maxf(minimum, float(setting("bubble", "max_duration", 12.0)))
 	remaining = clampf(float(setting("bubble", "base_duration", 1.5)) + message.length() * maxf(0, float(setting("bubble", "seconds_per_character", 0.055))), minimum, maximum)
+	_reset_voice_fade()
 	voice.stop()
 	var audio_path := str(current_line.get("audio", ""))
 	if not audio_path.is_empty():
@@ -345,8 +349,25 @@ func _process(delta: float) -> void:
 			remaining = maxf(0, float(setting("bubble", "line_gap", 0.35)))
 
 
+func fade_line_voice(line_id: String, duration: float = 1.1, target_db: float = -30.0) -> void:
+	if str(current_line.get("id", "")) != line_id or not voice.playing:
+		return
+	if voice_fade != null:
+		voice_fade.kill()
+	voice_fade = create_tween()
+	voice_fade.tween_property(voice, "volume_db", target_db, duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+
+func _reset_voice_fade() -> void:
+	if voice_fade != null:
+		voice_fade.kill()
+		voice_fade = null
+	voice.volume_db = 0.0
+
+
 func _end_line() -> void:
 	voice.stop()
+	_reset_voice_fade()
 	voice.stream = null
 	screen_bubble.close_dialog()
 	var actor := get_speaker(str(current_line.get("speaker", "")))
