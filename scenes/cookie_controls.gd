@@ -29,6 +29,11 @@ func _ready() -> void:
 			child.physics_quadrant_size = 1
 	cookies[0].can_hop_obstacles = true
 	cookies[1].bridge_cookie = cookies[0]
+	var cars := preload("res://scenes/car_props.gd").new()
+	cars.props = $Props
+	cars.passenger = cookies[1]
+	add_child(cars)
+	cookies[1].obstacle_action_handler = cars.try_activate
 	cookies[0].launch_handler = Callable(self, "try_launch_small")
 	cookies[1].movement_blocked_handler = Callable(self, "is_small_pinned")
 	cookies[1].struggle_progress.connect(_lift_top_cookie)

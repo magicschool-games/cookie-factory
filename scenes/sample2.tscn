@@ -490,6 +490,8 @@ mouse_filter = 2
 
 [node name="World" type="Node2D" parent="." unique_id=1801525715]
 script = ExtResource("1_hn414")
+next_scene = "res://scenes/ui/main_menu.tscn"
+exit_region = Rect2(1536, 256, 256, 192)
 previous_scene = "res://scenes/sample.tscn"
 return_region = Rect2(0, 256, 64, 192)
 previous_scene_spawns = Array[Vector2]([Vector2(1664, 352), Vector2(1696, 416)])

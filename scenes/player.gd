@@ -37,6 +37,7 @@ const FLING_DURATION := 0.36
 const FLING_RELEASE := 0.45
 var launch_handler: Callable
 var movement_blocked_handler: Callable
+var obstacle_action_handler: Callable
 var is_struggling := false
 var struggle_elapsed := 0.0
 var struggle_direction := Vector2.ZERO
@@ -136,7 +137,7 @@ func _physics_process(delta: float) -> void:
 
 	# A throw consumes the current movement press. Holding it must not make
 	# the launcher walk after the passenger lands.
-	if launch_input_consumed:
+	if launch_input_consumed and roll_direction == Vector2.ZERO:
 		if input_dir == Vector2.ZERO:
 			launch_input_consumed = false
 		else:
@@ -159,6 +160,10 @@ func _physics_process(delta: float) -> void:
 			struggle_started.emit()
 			return
 		if launch_handler.is_valid() and launch_handler.call(input_dir.normalized()):
+			launch_input_consumed = true
+			velocity = Vector2.ZERO
+			return
+		if obstacle_action_handler.is_valid() and obstacle_action_handler.call(input_dir):
 			launch_input_consumed = true
 			velocity = Vector2.ZERO
 			return
@@ -215,6 +220,16 @@ func _physics_process(delta: float) -> void:
 		roll_shadow.visible = false
 		velocity = Vector2.ZERO
 		landed.emit()
+
+
+func flip_into_vacated_cell(direction: Vector2) -> void:
+	roll_direction = direction
+	roll_distance = GRID_SIZE
+	roll_horizontal = absf(direction.x) > 0.5
+	roll_start = position
+	roll_travel = 0.0
+	face_flipped = false
+	jump_started.emit()
 
 
 func _prepare_obstacle_hop(allow_landing_on_tile: bool) -> void:
