@@ -90,55 +90,6 @@
           "expression": "happy"
         },
         {
-          "id": "story_01_006",
-          "speaker": "chorus",
-          "text": "we all liberated,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
-          "expression": "happy"
-        },
-        {
-          "id": "story_01_007",
-          "speaker": "chorus",
-          "text": "dancing ‘round the golden one,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
-          "expression": "thrilled"
-        },
-        {
-          "id": "story_01_008",
-          "speaker": "chorus",
-          "text": "Everybody shoo, shoo, shoo.",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
-          "expression": "thrilled"
-        },
-        {
-          "id": "story_01_009",
-          "speaker": "chorus",
-          "text": "Ringel, Ringel, Roses,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
-          "expression": "happy"
-        },
-        {
-          "id": "story_01_010",
-          "speaker": "chorus",
-          "text": "yellow lil’ apricots,",
-          "audio": "assets/voicelines/conversation_01/small_01.wav",
-          "expression": "happy"
-        },
-        {
-          "id": "story_01_011",
-          "speaker": "chorus",
-          "text": "Violet blue, forget-me-not,",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
-          "expression": "happy"
-        },
-        {
-          "id": "story_01_012",
-          "speaker": "chorus",
-          "text": "cookies lov’s him lot, lot, lot. ",
-          "audio": "assets/voicelines/conversation_01/big_02.wav",
-          "expression": "happy"
-        },
-        {
           "id": "story_01_013",
           "speaker": "kid_cookie",
           "text": "Mom? Where is the golden cookie leading us?",
@@ -177,7 +128,7 @@
         {
           "id": "story_02_002",
           "speaker": "small_cookie",
-          "text": "But he IS our friend. That must be some sort of misunderstanding. Maybe if we just ask him?",
+          "text": "But he IS our friend. That must be some sort of misunderstanding.",
           "audio": "assets/audio/10.wav",
           "expression": "worried"
         },
@@ -256,7 +207,7 @@
         {
           "id": "small_001",
           "text": "Golden. Golden. Happy one.",
-          "audio": "assets/voicelines/conversation_02/big_01.wav",
+          "audio": "assets/audio/1001.wav",
           "category": "golden_cookie_memory",
           "contexts": [
             "idle",
