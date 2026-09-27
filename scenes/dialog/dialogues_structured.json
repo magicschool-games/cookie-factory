@@ -219,6 +219,7 @@
       ]
     },
     "between_intros_01": {
+      "screen_position": "center",
       "kind": "story_sequence",
       "playback": "sequential",
       "trigger_event": "intro_01_finished",

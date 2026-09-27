@@ -8,6 +8,7 @@ var _tween: Tween
 var pop_scale := 1.0
 var bubble_size := Vector2.ZERO
 var screen_narration := false
+var center_narration := false
 
 enum DialogPosition { TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT }
 
@@ -92,6 +93,8 @@ func _place_bubble() -> void:
 	zoom = maxf(0.01, zoom)
 	var size := bubble_size * zoom
 	var desired := Vector2((view_size.x - size.x) * 0.5, 24 if screen_narration else 12)
+	if screen_narration and center_narration:
+		desired.y = (view_size.y - size.y) * 0.5
 	var tail := $DialogContainer/TailAnchor/Tail as TextureRect
 	tail.visible = is_instance_valid(follow_target)
 	if is_instance_valid(follow_target):

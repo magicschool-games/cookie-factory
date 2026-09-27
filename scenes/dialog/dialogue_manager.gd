@@ -298,6 +298,8 @@ func _show_next() -> void:
 		stop_dialogue()
 		return
 	bubble.follow_target = actor
+	var story: Dictionary = data.get("story_dialogue", {}).get(conversation_id, {})
+	bubble.center_narration = str(current_line.get("screen_position", story.get("screen_position", "top"))) == "center"
 	var characters: Dictionary = data.get("characters", {})
 	var display_name := str(characters.get(speaker_id, {}).get("display_name", speaker_id.capitalize()))
 	var message := str(current_line.get("text", ""))
