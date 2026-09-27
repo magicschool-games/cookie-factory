@@ -217,6 +217,28 @@
           "expression": "thrilled"
         }
       ]
+    },
+    "between_intros_01": {
+      "kind": "story_sequence",
+      "playback": "sequential",
+      "trigger_event": "intro_01_finished",
+      "skippable": true,
+      "lines": [
+        {
+          "id": "between_intros_01_001",
+          "speaker": "narrator",
+          "text": "Meanwhile, \"off screen\", something unexpected happens...",
+          "audio": "",
+          "expression": "neutral"
+        },
+        {
+          "id": "between_intros_01_002",
+          "speaker": "narrator",
+          "text": "It seems a few cookies did not join the fun, or do they?",
+          "audio": "",
+          "expression": "neutral"
+        }
+      ]
     }
   },
   "random_dialogue": {

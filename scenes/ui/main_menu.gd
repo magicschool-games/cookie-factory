@@ -11,6 +11,7 @@ signal quit_pressed
 
 func _ready() -> void:
 	game_start_pressed.connect(_start_game)
+	credits_pressed.connect(_open_credits)
 	quit_pressed.connect(_quit_game)
 
 	if game_start_button:
@@ -23,9 +24,15 @@ func _ready() -> void:
 		quit_button.pressed.connect(quit_pressed.emit)
 
 func _start_game() -> void:
-	var error := get_tree().change_scene_to_file("res://scenes/sample.tscn")
+	var error := get_tree().change_scene_to_file("res://scenes/intro_01.tscn")
 	if error != OK:
-		push_error("Failed to open sample scene: %s" % error_string(error))
+		push_error("Failed to open intro scene: %s" % error_string(error))
+
+func _open_credits() -> void:
+	var error := get_tree().change_scene_to_file("res://scenes/ui/credits.tscn")
+	if error != OK:
+		push_error("Failed to open credits: " + error_string(error))
+
 
 func _quit_game() -> void:
 	get_tree().quit()

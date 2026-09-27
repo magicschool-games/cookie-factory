@@ -30,6 +30,9 @@ var remaining := 0.0
 var skippable := false
 var rng := RandomNumberGenerator.new()
 var voice: AudioStreamPlayer
+var story_sequence_owner: WeakRef
+var screen_bubble: DialogBubble
+var advance_hint: Label
 
 
 func _ready() -> void:
@@ -37,6 +40,22 @@ func _ready() -> void:
 	rng.randomize()
 	voice = AudioStreamPlayer.new()
 	add_child(voice)
+	var screen_layer := CanvasLayer.new()
+	screen_layer.layer = 30
+	add_child(screen_layer)
+	screen_bubble = BUBBLE.instantiate()
+	screen_bubble.screen_narration = true
+	screen_layer.add_child(screen_bubble)
+	advance_hint = Label.new()
+	advance_hint.text = "Enter: next / skip line    Esc: skip story"
+	advance_hint.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	advance_hint.add_theme_font_size_override("font_size", 18)
+	advance_hint.add_theme_color_override("font_shadow_color", Color.BLACK)
+	advance_hint.add_theme_constant_override("shadow_offset_x", 2)
+	advance_hint.add_theme_constant_override("shadow_offset_y", 2)
+	screen_layer.add_child(advance_hint)
+	get_viewport().size_changed.connect(_update_advance_hint)
+	_update_advance_hint()
 	var config_error := tuning.load(CONFIG_PATH)
 	if config_error != OK:
 		push_warning("Dialogue tuning unavailable; using defaults: " + error_string(config_error))
@@ -138,6 +157,8 @@ func _context_priority(context: String) -> int:
 
 
 func _can_start(value: int) -> bool:
+	if value < Priority.STORY and story_sequence_owner != null and is_instance_valid(story_sequence_owner.get_ref()):
+		return false
 	if speakers.is_empty():
 		return false
 	if active:
@@ -217,12 +238,46 @@ func play_story(id: String) -> bool:
 	return true
 
 
+func begin_story_sequence(owner_node: Node) -> void:
+	stop_dialogue()
+	story_sequence_owner = weakref(owner_node)
+	_update_advance_hint()
+
+
+func end_story_sequence(owner_node: Node) -> void:
+	if story_sequence_owner != null and story_sequence_owner.get_ref() == owner_node:
+		story_sequence_owner = null
+		_update_advance_hint()
+
+
+func play_line(id: String) -> bool:
+	if not _can_start(Priority.STORY):
+		return false
+	var line: Dictionary = lines_by_id.get(id, {})
+	if line.is_empty():
+		# Check story lines too
+		for story in data.get("story_dialogue", {}).values():
+			for l in story.get("lines", []):
+				if l.get("id") == id:
+					line = l
+					break
+			if not line.is_empty(): break
+
+	if line.is_empty():
+		return false
+
+	var sequence: Array[Dictionary] = [line]
+	_start(id, sequence, Priority.STORY, true)
+	return true
+
+
 func _start(id: String, sequence: Array[Dictionary], value: int, allow_skip: bool = false) -> void:
 	stop_dialogue()
 	active = true
 	conversation_id = id
 	priority = value as Priority
 	skippable = allow_skip
+	_update_advance_hint()
 	queue.assign(sequence)
 	dialogue_started.emit(id)
 	_show_next()
@@ -236,12 +291,9 @@ func _show_next() -> void:
 	var speaker_id := str(current_line.get("speaker", "narrator"))
 	var bubble = bubbles.get(speaker_id)
 	var actor := get_speaker(speaker_id)
-	if not is_instance_valid(bubble):
-		# Story cast without a scene actor uses the same bubble as a narration panel.
-		for candidate in bubbles.values():
-			if is_instance_valid(candidate):
-				bubble = candidate
-				break
+	if speaker_id in ["narrator", "chorus"] or not is_instance_valid(actor) or not actor.is_visible_in_tree():
+		actor = null
+		bubble = screen_bubble
 	if not is_instance_valid(bubble):
 		stop_dialogue()
 		return
@@ -294,6 +346,7 @@ func _process(delta: float) -> void:
 func _end_line() -> void:
 	voice.stop()
 	voice.stream = null
+	screen_bubble.close_dialog()
 	var actor := get_speaker(str(current_line.get("speaker", "")))
 	if is_instance_valid(actor):
 		var eyes := actor.get_node_or_null("Eyes")
@@ -314,6 +367,7 @@ func _finish(interrupted: bool) -> void:
 	active = false
 	queue.clear()
 	conversation_id = ""
+	_update_advance_hint()
 	next_allowed = clock + float(config.get("global_cooldown_seconds", 8.0))
 	dialogue_finished.emit(ended, interrupted)
 
@@ -329,13 +383,22 @@ func skip_line() -> void:
 		_show_next()
 
 
+func _update_advance_hint() -> void:
+	if advance_hint == null:
+		return
+	var in_sequence := story_sequence_owner != null and is_instance_valid(story_sequence_owner.get_ref())
+	advance_hint.visible = in_sequence or (active and priority == Priority.STORY and skippable)
+	advance_hint.reset_size()
+	advance_hint.position = get_viewport().get_visible_rect().size - advance_hint.size - Vector2(24, 20)
+
+
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not active or priority != Priority.STORY or not skippable:
 		return
 	if event is InputEventKey and event.pressed and not event.echo:
-		if event.physical_keycode == KEY_SPACE:
+		if event.physical_keycode in [KEY_SPACE, KEY_ENTER]:
 			skip_line()
-		elif event.physical_keycode == KEY_ENTER:
+		elif event.physical_keycode == KEY_ESCAPE:
 			stop_dialogue()
 		else:
 			return
