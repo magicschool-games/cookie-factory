@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dnoiwoy4lfic8" path="res://theme/input/keyboard_escape.png" id="5_giomx"]
 [ext_resource type="Texture2D" uid="uid://j8f3grq4vods" path="res://theme/input/keyboard_escape_outline.png" id="6_ytjh7"]
 
+[ext_resource type="Texture2D" path="res://theme/input/keyboard_r.svg" id="7_restart"]
+
 [node name="InputHints" type="Control" unique_id=1006091290 node_paths=PackedStringArray("move_hint", "interact_hint", "quit_hint")]
 layout_mode = 3
 anchors_preset = 15
@@ -68,6 +70,18 @@ text = "Switch controls"
 [node name="Spacer" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1689139795]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="RestartHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/RestartHintContainer"]
+layout_mode = 2
+texture = ExtResource("7_restart")
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/RestartHintContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Restart"
 
 [node name="QuitHintContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1061335278]
 layout_mode = 2

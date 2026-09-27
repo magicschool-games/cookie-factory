@@ -1,0 +1,392 @@
+{
+	"tile_size": [
+		16,
+		16
+	],
+	"tiles": [
+		{
+			"atlas_coords": [
+				0,
+				0
+			],
+			"file": "tiles/floor_crack_01.png",
+			"name": "floor_crack_01",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				1,
+				0
+			],
+			"file": "tiles/floor_crack_02.png",
+			"name": "floor_crack_02",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				2,
+				0
+			],
+			"file": "tiles/floor_crack_03.png",
+			"name": "floor_crack_03",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				3,
+				0
+			],
+			"file": "tiles/floor_crack_04.png",
+			"name": "floor_crack_04",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				4,
+				0
+			],
+			"file": "tiles/floor_crack_05.png",
+			"name": "floor_crack_05",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				5,
+				0
+			],
+			"file": "tiles/floor_crack_06.png",
+			"name": "floor_crack_06",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				6,
+				0
+			],
+			"file": "tiles/floor_crack_07.png",
+			"name": "floor_crack_07",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				7,
+				0
+			],
+			"file": "tiles/floor_crack_08.png",
+			"name": "floor_crack_08",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				0,
+				1
+			],
+			"file": "tiles/floor_hole_01.png",
+			"name": "floor_hole_01",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				1,
+				1
+			],
+			"file": "tiles/floor_hole_02.png",
+			"name": "floor_hole_02",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				2,
+				1
+			],
+			"file": "tiles/floor_hole_03.png",
+			"name": "floor_hole_03",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				3,
+				1
+			],
+			"file": "tiles/floor_hole_04.png",
+			"name": "floor_hole_04",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				4,
+				1
+			],
+			"file": "tiles/floor_hole_05.png",
+			"name": "floor_hole_05",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				5,
+				1
+			],
+			"file": "tiles/floor_hole_06.png",
+			"name": "floor_hole_06",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				6,
+				1
+			],
+			"file": "tiles/floor_hole_07.png",
+			"name": "floor_hole_07",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				7,
+				1
+			],
+			"file": "tiles/floor_hole_08.png",
+			"name": "floor_hole_08",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				0,
+				2
+			],
+			"file": "tiles/floor_butter_puddle.png",
+			"name": "floor_butter_puddle",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				1,
+				2
+			],
+			"file": "tiles/floor_butter_smear.png",
+			"name": "floor_butter_smear",
+			"pixel_size": [
+				16,
+				16
+			],
+			"tile_footprint": [
+				1,
+				1
+			]
+		},
+		{
+			"atlas_coords": [
+				0,
+				3
+			],
+			"file": "tiles/dough_mixer.png",
+			"name": "dough_mixer",
+			"pixel_size": [
+				32,
+				32
+			],
+			"tile_footprint": [
+				2,
+				2
+			]
+		},
+		{
+			"atlas_coords": [
+				2,
+				3
+			],
+			"file": "tiles/bakery_oven.png",
+			"name": "bakery_oven",
+			"pixel_size": [
+				32,
+				32
+			],
+			"tile_footprint": [
+				2,
+				2
+			]
+		},
+		{
+			"atlas_coords": [
+				4,
+				3
+			],
+			"file": "tiles/prep_table.png",
+			"name": "prep_table",
+			"pixel_size": [
+				32,
+				32
+			],
+			"tile_footprint": [
+				2,
+				2
+			]
+		},
+		{
+			"atlas_coords": [
+				0,
+				5
+			],
+			"file": "tiles/conveyor_station.png",
+			"name": "conveyor_station",
+			"pixel_size": [
+				48,
+				32
+			],
+			"tile_footprint": [
+				3,
+				2
+			]
+		},
+		{
+			"atlas_coords": [
+				3,
+				5
+			],
+			"file": "tiles/pipe_valve.png",
+			"name": "pipe_valve",
+			"pixel_size": [
+				16,
+				32
+			],
+			"tile_footprint": [
+				1,
+				2
+			]
+		},
+		{
+			"atlas_coords": [
+				4,
+				5
+			],
+			"file": "tiles/machine_cabinet.png",
+			"name": "machine_cabinet",
+			"pixel_size": [
+				32,
+				32
+			],
+			"tile_footprint": [
+				2,
+				2
+			]
+		}
+	]
+}

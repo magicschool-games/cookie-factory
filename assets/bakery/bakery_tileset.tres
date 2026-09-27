@@ -1,0 +1,10 @@
+[gd_resource type="TileSet" load_steps=2 format=3]
+
+[ext_resource type="TileSetAtlasSource" path="res://assets/bakery/bakery_atlas.tres" id="1_atlas"]
+
+[resource]
+tile_size = Vector2i(16, 16)
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "asset_name"
+custom_data_layer_0/type = 4
+sources/0 = ExtResource("1_atlas")

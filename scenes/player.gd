@@ -2,13 +2,25 @@ extends CharacterBody2D
 
 signal jump_started
 signal landed
+signal struggle_started
+signal struggle_progress(effort: float)
 
 const SPEED = 300.0
+const GRID_SIZE := 64.0
+const COOKIE_EYES = preload("res://scenes/cookie_eyes.gd")
+const OBSTACLE_HOP = preload("res://scenes/obstacle_hop.gd")
 
 @export var is_controlled := false
+@export var separate_eyes := false
+@export var can_hop_obstacles := false
+var hop_bodies: Array[RID] = []
+var support_bodies: Array[RID] = []
+var bridge_cookie: CharacterBody2D
+var eyes
 var roll_direction := Vector2.ZERO
 var roll_distance := 0.0
 var roll_travel := 0.0
+var roll_start := Vector2.ZERO
 var roll_horizontal := false
 var face_flipped := false
 var footprint := Vector2.ONE
@@ -24,6 +36,11 @@ var fling_released := false
 const FLING_DURATION := 0.36
 const FLING_RELEASE := 0.45
 var launch_handler: Callable
+var movement_blocked_handler: Callable
+var is_struggling := false
+var struggle_elapsed := 0.0
+var struggle_direction := Vector2.ZERO
+const STRUGGLE_DURATION := 0.3
 var active_launch_target: CharacterBody2D
 var launch_input_consumed := false
 @onready var resting_scale: Vector2 = $Sprite2D.scale
@@ -40,6 +57,7 @@ func _ready() -> void:
 	sprite.position = Vector2.ZERO
 	axes_swapped = absf(sin(sprite.rotation)) > 0.707
 	footprint = Vector2(visible_size.y, visible_size.x) if axes_swapped else visible_size
+	position = grid_position(position)
 	roll_shadow = Polygon2D.new()
 	roll_shadow.name = "RollShadow"
 	roll_shadow.z_index = -1
@@ -51,9 +69,29 @@ func _ready() -> void:
 	roll_shadow.polygon = outline
 	roll_shadow.visible = false
 	add_child(roll_shadow)
+	if separate_eyes:
+		eyes = COOKIE_EYES.new()
+		eyes.name = "Eyes"
+		add_child(eyes)
+		jump_started.connect(eyes.begin_flip)
+		landed.connect(eyes.settle)
+
+
+func grid_position(value: Vector2) -> Vector2:
+	var cell_footprint := (footprint / GRID_SIZE).round().max(Vector2.ONE)
+	var offset := Vector2(fmod(cell_footprint.x, 2.0), fmod(cell_footprint.y, 2.0)) * GRID_SIZE * 0.5
+	return ((value - offset) / GRID_SIZE).round() * GRID_SIZE + offset
+
+
+func _cardinal_direction(value: Vector2) -> Vector2:
+	if absf(value.x) >= absf(value.y):
+		return Vector2(signf(value.x), 0)
+	return Vector2(0, signf(value.y))
 
 
 func toggle_flip_h() -> void:
+	if eyes:
+		eyes.mirror(true)
 	if axes_swapped:
 		sprite.flip_v = not sprite.flip_v
 	else:
@@ -61,6 +99,8 @@ func toggle_flip_h() -> void:
 
 
 func toggle_flip_v() -> void:
+	if eyes:
+		eyes.mirror(false)
 	if axes_swapped:
 		sprite.flip_h = not sprite.flip_h
 	else:
@@ -68,6 +108,9 @@ func toggle_flip_v() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if is_struggling:
+		advance_struggle(delta)
+		return
 	# The wind-up and release finish even if the player switches cookies.
 	if is_flinging:
 		advance_fling(delta)
@@ -89,6 +132,7 @@ func _physics_process(delta: float) -> void:
 		input_dir.y += 1
 	if not is_controlled:
 		input_dir = Vector2.ZERO
+	input_dir = _cardinal_direction(input_dir)
 
 	# A throw consumes the current movement press. Holding it must not make
 	# the launcher walk after the passenger lands.
@@ -106,6 +150,14 @@ func _physics_process(delta: float) -> void:
 		if input_dir == Vector2.ZERO:
 			velocity = Vector2.ZERO
 			return
+		if movement_blocked_handler.is_valid() and movement_blocked_handler.call():
+			is_struggling = true
+			struggle_elapsed = 0.0
+			struggle_direction = input_dir.normalized()
+			launch_input_consumed = true
+			velocity = Vector2.ZERO
+			struggle_started.emit()
+			return
 		if launch_handler.is_valid() and launch_handler.call(input_dir.normalized()):
 			launch_input_consumed = true
 			velocity = Vector2.ZERO
@@ -113,15 +165,21 @@ func _physics_process(delta: float) -> void:
 		roll_direction = input_dir.normalized()
 		roll_horizontal = absf(roll_direction.x) >= absf(roll_direction.y)
 		# One flip covers the cookie's extent along its direction of travel.
-		roll_distance = footprint.dot(roll_direction.abs())
+		roll_distance = maxf(GRID_SIZE, roundf(footprint.dot(roll_direction.abs()) / GRID_SIZE) * GRID_SIZE)
+		if can_hop_obstacles:
+			if footprint.dot(roll_direction.abs()) > GRID_SIZE + 0.1 or OBSTACLE_HOP.short_axis_has_clear_cell(self, roll_direction, roll_distance):
+				_prepare_obstacle_hop(true)
+		else:
+			_prepare_bridge_crossing()
 		roll_travel = 0.0
+		roll_start = position
 		face_flipped = false
 		jump_started.emit()
 
 	# Finish the current flip even when the movement key is released.
 	velocity = roll_direction * minf(SPEED, (roll_distance - roll_travel) / delta)
 	var before := position
-	move_and_slide()
+	var collision := move_and_collide(velocity * delta)
 	var forward_travel := maxf(0.0, (position - before).dot(roll_direction))
 	roll_travel += forward_travel
 	var progress := clampf(roll_travel / roll_distance, 0.0, 1.0)
@@ -144,10 +202,14 @@ func _physics_process(delta: float) -> void:
 	var squash := maxf(0.10, absf(cos(angle)))
 	var squash_local_x := roll_horizontal != axes_swapped
 	sprite.scale = resting_scale * (Vector2(squash, 1) if squash_local_x else Vector2(1, squash))
-	# Wall contact can still allow sliding; only cancel when actually blocked.
-	if roll_travel >= roll_distance - 0.001 or forward_travel < 0.0001:
+	# Finish on a grid anchor. A blocked jump returns to its last fully
+	# reached tile instead of leaving the cookie between tiles at the wall.
+	if roll_travel >= roll_distance - 0.001 or collision != null or forward_travel < 0.0001:
+		var completed_distance := roll_distance if roll_travel >= roll_distance - 0.001 else floorf((roll_travel + 0.001) / GRID_SIZE) * GRID_SIZE
+		position = roll_start + roll_direction * completed_distance
 		roll_direction = Vector2.ZERO
 		is_launched = false
+		_clear_obstacle_hop()
 		sprite.scale = resting_scale
 		sprite.position = Vector2.ZERO
 		roll_shadow.visible = false
@@ -155,15 +217,91 @@ func _physics_process(delta: float) -> void:
 		landed.emit()
 
 
+func _prepare_obstacle_hop(allow_landing_on_tile: bool) -> void:
+	var hop: Dictionary = OBSTACLE_HOP.plan(self, roll_direction, roll_distance, allow_landing_on_tile)
+	if hop.is_empty():
+		return
+	roll_distance = hop.distance
+	hop_bodies.assign(hop.bodies)
+	for body in hop_bodies:
+		PhysicsServer2D.body_add_collision_exception(get_rid(), body)
+
+
+func _prepare_bridge_crossing() -> void:
+	if not is_instance_valid(bridge_cookie) or bridge_cookie.roll_direction != Vector2.ZERO or bridge_cookie.is_flinging:
+		return
+	# Only the tiles actually supporting the big cookie become traversable.
+	hop_bodies.assign(bridge_cookie.support_bodies)
+	for body in hop_bodies:
+		PhysicsServer2D.body_add_collision_exception(get_rid(), body)
+
+
+func _clear_obstacle_hop() -> void:
+	var overlaps: Array[RID] = OBSTACLE_HOP.overlapping_bodies(self)
+	var retained: Array[RID] = []
+	var candidates: Array[RID] = support_bodies.duplicate()
+	for body in hop_bodies:
+		if body not in candidates:
+			candidates.append(body)
+	for body in candidates:
+		var supported: bool = can_hop_obstacles or (is_instance_valid(bridge_cookie) and body in bridge_cookie.support_bodies)
+		if body in overlaps and supported:
+			retained.append(body)
+		else:
+			PhysicsServer2D.body_remove_collision_exception(get_rid(), body)
+	support_bodies = retained
+	hop_bodies.clear()
+
+
+func advance_struggle(delta: float) -> void:
+	# Rock under the weight without moving the body or changing the stack.
+	velocity = Vector2.ZERO
+	struggle_elapsed += delta
+	var progress := minf(struggle_elapsed / STRUGGLE_DURATION, 1.0)
+	var effort := sin(progress * PI) if progress < 1.0 else 0.0
+	# Bulge beyond the upper cookie's edges so the trapped cookie is visible.
+	sprite.scale = resting_scale * (1.0 + 0.11 * effort)
+	sprite.position = struggle_direction * (4.0 * effort)
+	struggle_progress.emit(effort)
+	if progress >= 1.0:
+		is_struggling = false
+		sprite.scale = resting_scale
+		sprite.position = Vector2.ZERO
+
+
 func launch_flip(direction: Vector2, distance: float) -> void:
 	launch_pending = false
 	is_launched = true
-	roll_direction = direction.normalized()
+	roll_direction = _cardinal_direction(direction)
 	roll_horizontal = absf(roll_direction.x) >= absf(roll_direction.y)
-	roll_distance = distance
+	roll_distance = maxf(GRID_SIZE, roundf(distance / GRID_SIZE) * GRID_SIZE)
+	_prepare_catapult_flight()
 	roll_travel = 0.0
+	roll_start = position
 	face_flipped = false
 	jump_started.emit()
+
+
+func _prepare_catapult_flight() -> void:
+	if not test_move(global_transform, roll_direction * roll_distance) and OBSTACLE_HOP.overlapping_bodies(self).is_empty():
+		return
+	# Extend a short throw only as needed to land beyond a two-tile obstacle.
+	# Existing support under the launcher is excluded from obstacle depth.
+	var maximum := maxf(roll_distance, GRID_SIZE * 3.0)
+	if is_instance_valid(bridge_cookie):
+		var launcher_remaining: float = (bridge_cookie.global_position - global_position).dot(roll_direction)
+		launcher_remaining += (bridge_cookie.footprint - footprint).dot(roll_direction.abs()) * 0.5
+		maximum += ceilf(maxf(launcher_remaining, 0.0) / GRID_SIZE) * GRID_SIZE
+	var candidate := roll_distance
+	while candidate <= maximum:
+		var flight: Dictionary = OBSTACLE_HOP.plan(self, roll_direction, candidate, false, 2)
+		if not flight.is_empty():
+			roll_distance = flight.distance
+			hop_bodies.assign(flight.bodies)
+			for body in hop_bodies:
+				PhysicsServer2D.body_add_collision_exception(get_rid(), body)
+			return
+		candidate += GRID_SIZE
 
 
 func begin_fling(passenger: CharacterBody2D, direction: Vector2, distance: float) -> void:

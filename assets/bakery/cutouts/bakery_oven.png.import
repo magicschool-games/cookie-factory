@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blatcss1b0mfd"
-path="res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"
+uid="uid://bfrjls43eq62e"
+path="res://.godot/imported/bakery_oven.png-3d488d9662df7a03eb8e740acbb26045.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/butterkek.png"
-dest_files=["res://.godot/imported/butterkek.png-14e593c6ef6a23c270d3b4012ccc3656.ctex"]
+source_file="res://assets/bakery/cutouts/bakery_oven.png"
+dest_files=["res://.godot/imported/bakery_oven.png-3d488d9662df7a03eb8e740acbb26045.ctex"]
 
 [params]
 
